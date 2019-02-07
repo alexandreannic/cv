@@ -1,33 +1,41 @@
-import {Icon, withStyles} from "@material-ui/core"
-import {font} from "../App"
 import React from "react"
+import {cssMixins} from "../utils/style"
+import {makeStyles} from "@material-ui/styles"
 
-const styles = t => ({
+export const sectionMargin = t => t.spacing.unit * 2
+
+const useStyles = makeStyles(t => ({
   Section: {
-    marginLeft: t.spacing.unit * 2,
-    borderBottom: '1px solid ' + t.palette.divider,
+    border: '1px solid ' + t.palette.divider,
+    padding: t.spacing.unit * 2,
+    marginBottom: sectionMargin(t),
+    borderRadius: cssMixins.radius,
   },
   title: {
-    color: t.palette.primary.main,
-    fontSize: font,
-    fontWeight: 500,
+    fontSize: cssMixins.fontTitle,
+    fontWeight: 600,
     display: 'flex',
     alignItems: 'center',
-    marginBottom: t.spacing.unit * 2,
-    marginTop: t.spacing.unit * 2,
+    marginBottom: t.spacing.unit,
   },
   i: {
     marginRight: t.spacing.unit,
   }
-})
+}))
 
-const Section = ({classes, title, icon, children}) =>
-  <div className={classes.Section}>
-    <div className={classes.title}>
-      {/*<Icon className={classes.i}>{icon}</Icon>*/}
-      {title}
+const Section = ({title, icon, children}) => {
+  const css = useStyles()
+  return (
+    <div className={css.Section}>
+      {title &&
+      <div className={css.title}>
+        {/*<Icon className={css.i}>{icon}</Icon>*/}
+        {title}
+      </div>
+      }
+      {children}
     </div>
-    {children}
-  </div>
+  )
+}
 
-export default withStyles(styles)(Section)
+export default Section

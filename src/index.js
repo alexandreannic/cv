@@ -2,9 +2,9 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 import App from "./App"
-import "normalize.css/normalize.css"
-import {createMuiTheme, MuiThemeProvider} from "@material-ui/core"
-import blue from "material-ui/colors/blue"
+import {blue} from "@material-ui/core/colors"
+import MuiThemeProvider from '@material-ui/styles/ThemeProvider'
+import {createMuiTheme,} from '@material-ui/core'
 
 const muiTheme = createMuiTheme({
   palette: {
@@ -20,4 +20,5 @@ ReactDOM.render(
     <App/>
   </MuiThemeProvider>
   ,
-  document.getElementById('root'))
+  document.getElementById('root')
+)

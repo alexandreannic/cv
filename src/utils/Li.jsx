@@ -1,7 +1,8 @@
 import withStyles from "@material-ui/core/es/styles/withStyles"
 import React from "react"
 import Icon from "@material-ui/core/es/Icon/Icon"
-import {font, lineHeight, rem} from "../App"
+import {rem} from "../App"
+import {cssMixins} from "./style"
 
 
 const styles = t => ({
@@ -11,9 +12,9 @@ const styles = t => ({
   },
   icon: {
     marginRight: t.spacing.unit,
-    fontSize: rem(.6),
-    lineHeight: font * lineHeight + 'px',
-    height: font * 1.15,
+    fontSize: cssMixins.rem(.6),
+    lineHeight: cssMixins.fontMedium * cssMixins.lineHeight + 'px',
+    height: cssMixins.fontMedium * 1.15,
   }
 })
 
