@@ -63,8 +63,8 @@ export const Aside = ({}) => {
         </Link>
         {/*<Link icon="phone">06 76 16 24 57</Link>*/}
         <Link icon="location_on">Paris Area, France</Link>
-        <Link iconFa="stack-overflow" href="https://stackoverflow.com/users/5735030/alexandre-annic">
-          <a href="https://github.com/alexandreannic">stackoverflow.com/users/5735030</a>
+        <Link iconFa="stack-overflow">
+          <a href="https://stackoverflow.com/users/5735030/alexandre-annic">stackoverflow.com/users/5735030</a>
         </Link>
         <Link iconFa="github">
           <a href="https://github.com/alexandreannic">github.com/alexandreannic</a>
@@ -74,23 +74,29 @@ export const Aside = ({}) => {
         </Link>
       </AsideSection>
       <AsideSection title="Framework">
-        <Skill logo="angular.png" title="Angular (2+)" rate={5}>
+        <Skill logo="dev/angular.png" title="Angular (2+)" rate={5}>
           Used in larges applications (~200 components) sometimes coupled <Code>ngrx</Code>.
         </Skill>
-        <Skill logo="react.png" title="React" rate={5}>
+        <Skill logo="dev/react.png" title="React" rate={5}>
           Used in large application (+100 components) sometimes coupled
           with <Code>Redux</Code> and <Code>TypeScript</Code>.
         </Skill>
-        <Skill logo="angularjs.png" title="AngularJS" rate={4}/>
-        <Skill logo="play.png" title="Play framework" rate={4}/>
+        <Skill logo="dev/angularjs.png" title="AngularJS" rate={4}/>
+        <Skill logo="dev/play.png" title="Play framework" rate={4}/>
       </AsideSection>
       <AsideSection title="Languages">
-        <Skill logo="ts.png" title="TypeScript" rate={5}/>
-        <Skill logo="javascript.png" title="JavaScript" rate={5}>
+        <Skill logo="dev/ts.png" title="TypeScript" rate={5}/>
+        <Skill logo="dev/javascript.png" title="JavaScript" rate={5}>
         </Skill>
-        <Skill logo="scala.png" title="Scala" rate={3}>
-        </Skill>
-        <Skill logo="java.png" title="Java" rate={4}>
+        <Skill logo="dev/scala.png" title="Scala" rate={3}/>
+        <Skill logo="dev/java.png" title="Java" rate={4}/>
+        <Skill logo="dev/csharp.png" title="C#" rate={2.5}/>
+        <Skill logo="dev/c++.png" title="C/C++" rate={3}/>
+        <Skill logo="dev/perl.png" title="Perl" rate={3.5}/>
+      </AsideSection>
+      <AsideSection title="Persistence">
+        <Skill title="SQL" rate={4.5}/>
+        <Skill title="NoSQL" rate={3}>
         </Skill>
       </AsideSection>
       {/*<hr className={classes.divider}/>*/}

@@ -13,7 +13,7 @@ const useStyles = makeStyles(t => ({
   },
   title: {
     fontSize: cssMixins.fontTitle,
-    fontWeight: 600,
+    fontWeight: 500,
     display: 'flex',
     alignItems: 'center',
     marginBottom: t.spacing.unit * 1.5,

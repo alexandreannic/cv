@@ -4,12 +4,16 @@ import "./asset/reset.css"
 import "./asset/print.css"
 import App from "./App"
 import {blue} from "@material-ui/core/colors"
-import MuiThemeProvider from '@material-ui/styles/ThemeProvider'
-import {createMuiTheme,} from '@material-ui/core'
+import MuiThemeProviderContext from '@material-ui/styles/ThemeProvider'
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core'
 
 const muiTheme = createMuiTheme({
   palette: {
-    primary: blue,
+    theme: 'dark',
+    primary: {
+      ...blue,
+      500: '#1a73e8',
+    },
     background: {
       default: '#F2F2F2'
     }
@@ -17,9 +21,11 @@ const muiTheme = createMuiTheme({
 })
 
 ReactDOM.render(
-  <MuiThemeProvider theme={muiTheme}>
-    <App/>
-  </MuiThemeProvider>
+  <MuiThemeProviderContext theme={muiTheme}>
+    <MuiThemeProvider theme={muiTheme}>
+      <App/>
+    </MuiThemeProvider>
+  </MuiThemeProviderContext>
   ,
   document.getElementById('root')
 )

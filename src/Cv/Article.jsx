@@ -47,9 +47,17 @@ const useStyles = makeStyles(t => ({
     fontSize: cssMixins.fontSmall,
   },
   honor: {
-    color: t.palette.text.secondary,
-    fontWeight: 'bold',
-    fontSize: cssMixins.fontMedium
+    // color: t.palette.text.secondary,
+    // fontWeight: 'bold',
+    // fontSize: cssMixins.fontSmall,
+    // display: 'inline-block',
+    // paddingRight: 3,
+    // paddingLeft: 3,
+    // border: '1px solid ' + t.palette.primary.main,
+    // color: t.palette.primary.main,
+    // borderRadius: 4,
+    fontWeight: 500,
+    // marginRight: t.spacing.unit,
   }
 }))
 
@@ -59,14 +67,19 @@ export const Article = ({title, period, location, logo, honor, children}) => {
     <div className={css.Article}>
       <div className={css.body}>
         <div className={css.header}>
-          <div className={css.title}>{title} {honor && <span className={css.honor}>- {honor}</span>}</div>
+          <div className={css.title}>
+            {title}
+          </div>
           <div className={css.period}>{period}</div>
         </div>
         <div className={css.location}>
           {/*<Logo className={css.logo} src={logo} size={logoSize}/>*/}
           {location}
         </div>
-        {children && <div className={css.text}>{children}</div>}
+        {children && <div className={css.text}>
+          {honor && <span className={css.honor}>{honor} - </span>}
+          {children}
+        </div>}
       </div>
     </div>
   )

@@ -17,6 +17,9 @@ const useStyles = makeStyles(t => ({
       textDecoration: 'none',
       color: t.palette.primary,
     },
+    '#printable-cv': {
+      background: '#fff',
+    }
   },
   root: {
     paddingTop: t.spacing.unit,
@@ -27,6 +30,9 @@ const useStyles = makeStyles(t => ({
   actions: {
     marginBottom: t.spacing.unit * 2,
     textAlign: 'right',
+    '& > *': {
+      marginLeft: `${t.spacing.unit}px !important`,
+    }
   },
   btn_i: {
     marginRight: t.spacing.unit,
@@ -34,7 +40,6 @@ const useStyles = makeStyles(t => ({
   body: {
     marginTop: t.spacing.unit,
     marginBottom: t.spacing.unit * 2,
-    background: '#fff',
     boxShadow: '0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2)',
   },
 }))
@@ -46,7 +51,7 @@ const App = () => {
     <main className={css.root}>
       <div className={css.actions}>
         <Fab size="medium" color="primary" aria-label="Sources">
-          <i class="fab fa-github"/>
+          <Icon className="fab fa-github"/>
         </Fab>
         <Fab size="medium" onClick={() => window.print()} color="primary" aria-label="Download as PDF / Print">
           <Icon>cloud_download</Icon>

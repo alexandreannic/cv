@@ -38,7 +38,6 @@ const useStyles = makeStyles(t => ({
     marginLeft: logoMargin(t) + logoSize,
     fontSize: cssMixins.fontSmall,
     marginTop: t.spacing.unit / 4,
-    textAlign: 'justify',
     paddingBottom: t.spacing.unit,
     color: t.palette.text.secondary,
   }

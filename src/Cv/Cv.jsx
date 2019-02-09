@@ -32,7 +32,8 @@ export const Cv = () => {
             logo="upmc.png"
           >
             Algorithmic (compression, hash methods, 2D geometry) -
-            Multithreaded and distributed programming (<Code>Scala</Code>, <Code>OCaml</Code>, <Code>Java</Code>, <Code>C</Code>) -
+            Multithreaded and distributed programming
+            (<Code>Scala</Code>, <Code>OCaml</Code>, <Code>Java</Code>, <Code>C</Code>) -
             Web app (security, tracking)
           </Article>
           <Article
@@ -44,7 +45,7 @@ export const Cv = () => {
           >
             Algorithmic (complexity, data structure, recursion) -
             OOP - Designs patterns -
-            Databases (transactions, <Code>SQL3</Code>, <Code>PL/SQL</Code>, <Code>NoSQL</Code>, <Code>XPath</Code>) - Statistics
+            Databases (transactions, <Code>SQL3</Code>, <Code>PL/SQL</Code>, <Code>NoSQL</Code>, <Code>XPath</Code>)
           </Article>
           <Article
             title="DUT of computer science" //  (two-year university degree in technology)
@@ -53,7 +54,7 @@ export const Cv = () => {
             logo="logo.jpg"
           >
             Unix architecture, bash, script -
-            POO Java, C++ -
+            POO <Code>Java</Code>, <Code>C++</Code> -
             Database -
             System programming in C (pipe, signal, fork, thread) -
             Networking (DHCP, DNS, Firewall) -
@@ -100,8 +101,7 @@ export const Cv = () => {
             location="Particeep - Paris"
             period="2016"
           >
-            Contributing to evolution of a large SaaS application wrote in <Code>Play! framework
-            Java</Code> and <Code>AngularJS</Code>. I refactored a large part of the application to improve
+            Contributing to evolution of a large SaaS application wrote in <Code>Play framework 1</Code> and <Code>AngularJS</Code>. I refactored a large part of the application to improve
             performances, code readability and
             reusability. Remove the whole <Code>css</Code> to create a solid <Code>Less</Code> design so I
             could implement a new feature to allow users to edit the theme application for their instances. Also adding
@@ -111,11 +111,13 @@ export const Cv = () => {
             logo="activa.png"
             title="Full-stack developer"
             location="Activa Informatique - Paris"
-            period="Summers 2014 and 2015"
+            period="Summers 2013, 2014 and 2015"
           >
-            Developping features on a Saas application like appointments calendar, real-time chat, statistics and
-            refactoring front side.<br/>
-            Stack: <Code>Play! framework</Code>, <Code>Java</Code>, <Code>JPA/Hibernate</Code>, <Code>JQuery</Code>
+            Developping features on a SaaS application like appointments calendar, real-time chat, statistics and
+            refactoring front side with the following stack:&nbsp;
+            <Code>Play framework 1</Code>, <Code>JPA</Code>, <Code>JQuery</Code>
+            <br/>
+            Developing couple websites in <Code>PHP</Code> for association or hotel.
           </Article>
           <Article
             logo="upmc.png"

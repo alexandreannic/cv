@@ -1,5 +1,6 @@
 import {makeStyles} from "@material-ui/styles"
 import React from "react"
+import {cssMixins} from "../../utils/style"
 
 const useStyles = makeStyles(t => ({
   root: {
@@ -10,8 +11,10 @@ const useStyles = makeStyles(t => ({
     }
   },
   title: {
-    marginBottom: t.spacing.unit,
-    fontWeight: 'bold',
+    marginBottom: t.spacing.unit * 1.5,
+    fontSize: cssMixins.fontBig,
+    fontWeight: 500,
+    lineHeight: 1,
   }
 }))
 
