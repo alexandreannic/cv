@@ -6,6 +6,7 @@ import {Skill} from "./Skill"
 import {cssMixins} from "../../utils/style"
 import {makeStyles} from "@material-ui/styles"
 import {AsideSection} from "./AsideSection"
+import {cvFr} from "../../i18n/cv.fr"
 
 const avatarSize = '1.5cm'
 
@@ -73,39 +74,26 @@ export const Aside = ({}) => {
           <a href="https://github.com/alexandreannic">linkedin.com/in/alexandreannic</a>
         </Link>
       </AsideSection>
-      <AsideSection title="Framework">
-        <Skill logo="dev/angular.png" title="Angular (2+)" rate={5}>
-          Used in larges applications (~200 components) sometimes coupled <Code>ngrx</Code>.
-        </Skill>
-        <Skill logo="dev/react.png" title="React" rate={5}>
-          Used in large application (+100 components) sometimes coupled
-          with <Code>Redux</Code> and <Code>TypeScript</Code>.
-        </Skill>
-        <Skill logo="dev/angularjs.png" title="AngularJS" rate={4}/>
-        <Skill logo="dev/play.png" title="Play framework" rate={4}/>
-      </AsideSection>
-      <AsideSection title="Languages">
-        <Skill logo="dev/ts.png" title="TypeScript" rate={5}/>
-        <Skill logo="dev/javascript.png" title="JavaScript" rate={5}>
-        </Skill>
-        <Skill logo="dev/scala.png" title="Scala" rate={3}/>
-        <Skill logo="dev/java.png" title="Java" rate={4}/>
-        <Skill logo="dev/csharp.png" title="C#" rate={2.5}/>
-        <Skill logo="dev/c++.png" title="C/C++" rate={3}/>
-        <Skill logo="dev/perl.png" title="Perl" rate={3.5}/>
-      </AsideSection>
-      <AsideSection title="Persistence">
-        <Skill title="SQL" rate={4.5}/>
-        <Skill title="NoSQL" rate={3}>
-        </Skill>
-      </AsideSection>
+      {cvFr.skills.map(s =>
+        <AsideSection title={s.title}>
+          {s.content.map(c =>
+            <Skill
+              logo={c.logo}
+              title={c.title}
+              rate={c.rate}
+              content={c.content}>
+              {c.content}
+            </Skill>
+          )}
+        </AsideSection>
+      )}
       {/*<hr className={classes.divider}/>*/}
       {/*Algorithmes: complexité, compression, arbre/graphe, hachage, géometrie,*/}
       {/*<hr className={classes.divider}/>*/}
       <AsideSection title="Various">
-        <div className={css.p}>Diploma for youth leaders and workers (BAFA)</div>
-        <div className={css.p}>Sport: Crossfit, climbing, running</div>
-        <div className={css.p}>Driving licence</div>
+        {cvFr.various.map(v =>
+          <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
+        )}
       </AsideSection>
     </main>
   )
