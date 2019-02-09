@@ -4,7 +4,7 @@ import {Icon} from "@material-ui/core"
 import React from "react"
 
 const useStyles = makeStyles(t => ({
-  Info: {
+  root: {
     fontSize: cssMixins.fontMedium,
     display: 'flex',
     alignItems: 'center',
@@ -12,7 +12,7 @@ const useStyles = makeStyles(t => ({
       paddingBottom: t.spacing.unit * 1
     },
   },
-  Info_i: {
+  i: {
     marginRight: t.spacing.unit,
     fontSize: '20px !important',
     minWidth: 18,
@@ -25,12 +25,12 @@ const useStyles = makeStyles(t => ({
 export const Link = ({icon, iconFa, children}) => {
   const css = useStyles()
   return (
-    <main className={css.Info}>
+    <div className={css.root}>
       {icon
-        ? <Icon className={css.Info_i}>{icon}</Icon>
-        : <i className={`fab fa-${iconFa} ${css.Info_i}`}/>
+        ? <Icon className={css.i}>{icon}</Icon>
+        : <i className={`fab fa-${iconFa} ${css.i}`}/>
       }
       {children}
-    </main>
+    </div>
   )
 }

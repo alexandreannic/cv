@@ -11,7 +11,7 @@ const avatarSize = '1.5cm'
 
 const useStyles = makeStyles(t => ({
   root: {
-    width: '6.6cm',
+    width: '6.3cm',
     marginRight: sectionMargin(t) * 1.5
   },
   header: {
@@ -58,12 +58,20 @@ export const Aside = ({}) => {
         </div>
       </div>
       <AsideSection>
-        <Link icon="email">alexandre.annic1@gmail.com</Link>
+        <Link icon="email">
+          <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
+        </Link>
         {/*<Link icon="phone">06 76 16 24 57</Link>*/}
         <Link icon="location_on">Paris Area, France</Link>
-        <Link iconFa="stack-overflow">stackoverflow.com/users/5735030</Link>
-        <Link iconFa="github">github.com/alexandreannic</Link>
-        <Link iconFa="linkedin">linkedin.com/in/alexandreannic</Link>
+        <Link iconFa="stack-overflow" href="https://stackoverflow.com/users/5735030/alexandre-annic">
+          <a href="https://github.com/alexandreannic">stackoverflow.com/users/5735030</a>
+        </Link>
+        <Link iconFa="github">
+          <a href="https://github.com/alexandreannic">github.com/alexandreannic</a>
+        </Link>
+        <Link iconFa="linkedin" href="https://www.linkedin.com/in/alexandreannic/">
+          <a href="https://github.com/alexandreannic">linkedin.com/in/alexandreannic</a>
+        </Link>
       </AsideSection>
       <AsideSection title="Framework">
         <Skill logo="angular.png" title="Angular (2+)" rate={5}>
