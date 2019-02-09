@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./index.css"
+import "./asset/reset.css"
+import "./asset/print.css"
 import App from "./App"
 import {blue} from "@material-ui/core/colors"
 import MuiThemeProvider from '@material-ui/styles/ThemeProvider'

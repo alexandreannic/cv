@@ -43,7 +43,7 @@ const useStyles = makeStyles(t => ({
   text: {
     marginTop: t.spacing.unit / 2,
     textAlign: 'justify',
-    color: t.palette.text.secondary,
+    // color: t.palette.text.secondary,
     fontSize: cssMixins.fontSmall,
   },
   honor: {

@@ -1,0 +1,26 @@
+@page {
+  size: A4 portrait; /* can use also 'landscape' for orientation */
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #printable-cv * {
+    visibility: visible;
+    height: auto;
+  }
+
+  #printable-cv {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

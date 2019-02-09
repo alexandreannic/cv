@@ -4,7 +4,7 @@ import {Rate} from "./Rate"
 import React from "react"
 import {makeStyles} from "@material-ui/styles"
 
-const logoSize = 20
+const logoSize = 18
 const logoMargin = t => t.spacing.unit
 const useStyles = makeStyles(t => ({
   root: {

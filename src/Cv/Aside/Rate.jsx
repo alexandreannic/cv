@@ -4,7 +4,7 @@ import {makeStyles} from "@material-ui/styles"
 
 const useStyles = makeStyles(t => ({
   root: {
-    color: '#fed430'
+    color: '#fbbc04'
   },
   icon: {
     fontSize: '18px !important',

@@ -18,7 +18,8 @@ const useStyles = makeStyles(t => ({
     minWidth: 18,
     textAlign: 'center',
     display: 'inline-block',
-    color: t.palette.text.secondary,
+    // color: t.palette.text.secondary,
+    color: t.palette.primary.main,
   },
 }))
 

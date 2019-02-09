@@ -2,10 +2,22 @@ import React from "react"
 import {makeStyles} from "@material-ui/styles"
 import {Cv} from "./Cv/Cv"
 import Icon from "@material-ui/core/Icon/Icon"
-import Button from "@material-ui/core/Button/Button"
 import Fab from "@material-ui/core/Fab/Fab"
 
 const useStyles = makeStyles(t => ({
+  '@global': {
+    body: {
+      fontFamily: 'Google Sans',
+      margin: 0,
+      padding: 0,
+      fontSize: 14,
+      backgroundColor: t.palette.background.default, //'#fafafa,
+    },
+    a: {
+      textDecoration: 'none',
+      color: t.palette.primary,
+    },
+  },
   root: {
     paddingTop: t.spacing.unit,
     height: '29.7cm',
@@ -27,7 +39,7 @@ const useStyles = makeStyles(t => ({
   },
 }))
 
-const App = ({}) => {
+const App = () => {
   const css = useStyles()
 
   return (
@@ -40,8 +52,8 @@ const App = ({}) => {
           <Icon>cloud_download</Icon>
         </Fab>
         {/*<Button onClick={() => window.print()} color="primary" variant="outlined" aria-label="Download as PDF / Print">*/}
-          {/*<Icon className={css.btn_i}>cloud_download</Icon>*/}
-          {/*Download as PDF*/}
+        {/*<Icon className={css.btn_i}>cloud_download</Icon>*/}
+        {/*Download as PDF*/}
         {/*</Button>*/}
       </div>
 
