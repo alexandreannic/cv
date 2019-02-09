@@ -7,18 +7,18 @@ const useStyles = makeStyles(t => ({
     color: '#fed430'
   },
   icon: {
-    fontSize: 16,
+    fontSize: '18px !important',
   }
 }))
 export const Rate = ({rate}) => {
   const css = useStyles()
   const hasHalf = rate % 1 !== 0
-  const icon = name => <Icon className={css.icon}>{name}</Icon>
+  const icon = (name, i) => <Icon className={css.icon} key={i}>{name}</Icon>
   return (
     <div className={css.root}>
-      {Array(Math.trunc(rate)).fill(0).map(() => icon('star'))}
+      {Array(Math.trunc(rate)).fill(0).map((_, i) => icon('star', i))}
       {hasHalf && icon('star_half')}
-      {Array(5 - Math.trunc(rate)).fill(0).map(() => icon('star_border'))}
+      {Array(5 - Math.trunc(rate)).fill(0).map((_, i) => icon('star_border', i))}
     </div>
   )
 }

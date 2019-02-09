@@ -16,7 +16,8 @@ const useStyles = makeStyles(t => ({
     fontWeight: 600,
     display: 'flex',
     alignItems: 'center',
-    marginBottom: t.spacing.unit,
+    marginBottom: t.spacing.unit * 1.5,
+    lineHeight: 1,
   },
   i: {
     marginRight: t.spacing.unit,
