@@ -1,7 +1,7 @@
-export const cvFr = {
+export const cvEn = {
   education: [
     {
-      title: 'Master STL (Science et Technologie du Logiciel)',
+      title: 'Master STL (Science and Software Technology)',
       honor: 'With high honours',
       period: '2016',
       location: 'UPMC (University Pierre et Marie Curie) - Paris',

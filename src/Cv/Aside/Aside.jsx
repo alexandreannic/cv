@@ -1,12 +1,11 @@
 import React from "react"
-import Code from "../../utils/Code"
 import {sectionMargin} from "../Section"
 import {Link} from "./Link"
 import {Skill} from "./Skill"
 import {cssMixins} from "../../utils/style"
 import {makeStyles} from "@material-ui/styles"
 import {AsideSection} from "./AsideSection"
-import {cvFr} from "../../i18n/cv.fr"
+import {useI18n} from "../../i18n/I18nContext"
 
 const avatarSize = '1.5cm'
 
@@ -49,6 +48,7 @@ const useStyles = makeStyles(t => ({
 
 export const Aside = ({}) => {
   const css = useStyles()
+  const i18n = useI18n()
   return (
     <main className={css.root}>
       <div className={css.header}>
@@ -74,7 +74,7 @@ export const Aside = ({}) => {
           <a href="https://github.com/alexandreannic">linkedin.com/in/alexandreannic</a>
         </Link>
       </AsideSection>
-      {cvFr.skills.map(s =>
+      {i18n.skills.map(s =>
         <AsideSection title={s.title}>
           {s.content.map(c =>
             <Skill
@@ -91,7 +91,7 @@ export const Aside = ({}) => {
       {/*Algorithmes: complexité, compression, arbre/graphe, hachage, géometrie,*/}
       {/*<hr className={classes.divider}/>*/}
       <AsideSection title="Various">
-        {cvFr.various.map(v =>
+        {i18n.various.map(v =>
           <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
         )}
       </AsideSection>

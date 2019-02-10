@@ -5,7 +5,7 @@ import Code from "../utils/Code"
 import React from "react"
 import {cssMixins} from "../utils/style"
 import {makeStyles} from "@material-ui/styles"
-import {cvFr} from "../i18n/cv.fr"
+import {useI18n} from "../i18n/I18nContext"
 
 const useStyles = makeStyles(t => ({
   content: {
@@ -20,12 +20,13 @@ const useStyles = makeStyles(t => ({
 
 export const Cv = () => {
   const css = useStyles()
+  const i18n = useI18n()
   return (
     <div className={css.content}>
       <Aside/>
       <div className={css.body}>
         <Section icon="school" title="Education">
-          {cvFr.education.map(e =>
+          {i18n.education.map(e =>
             <Article
               title={e.title}
               honor={e.honor}
@@ -39,7 +40,7 @@ export const Cv = () => {
         </Section>
 
         <Section icon="business_center" title="Work experiences">
-          {cvFr.work.map(e =>
+          {i18n.work.map(e =>
             <Article
               title={e.title}
               honor={e.honor}

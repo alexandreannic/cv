@@ -6,6 +6,7 @@ import App from "./App"
 import {blue} from "@material-ui/core/colors"
 import MuiThemeProviderContext from '@material-ui/styles/ThemeProvider'
 import {createMuiTheme, MuiThemeProvider} from '@material-ui/core'
+import {I18nContextProvider} from "./i18n/I18nContext"
 
 const muiTheme = createMuiTheme({
   palette: {
@@ -23,7 +24,9 @@ const muiTheme = createMuiTheme({
 ReactDOM.render(
   <MuiThemeProviderContext theme={muiTheme}>
     <MuiThemeProvider theme={muiTheme}>
-      <App/>
+      <I18nContextProvider>
+        <App/>
+      </I18nContextProvider>
     </MuiThemeProvider>
   </MuiThemeProviderContext>
   ,
