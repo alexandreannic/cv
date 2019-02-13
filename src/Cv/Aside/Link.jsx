@@ -13,7 +13,7 @@ const useStyles = makeStyles(t => ({
     },
   },
   i: {
-    marginRight: t.spacing.unit,
+    marginRight: t.spacing.unit * 1.5,
     fontSize: '20px !important',
     minWidth: 18,
     textAlign: 'center',
