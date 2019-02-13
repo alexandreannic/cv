@@ -63,11 +63,9 @@ export const cvFr = {
       period: '2016',
       content: `
         Contributing to evolution of a large SaaS application wrote in <code>Play framework
-        1</code> and <code>AngularJS</code>. I refactored a large part of the application to improve
+        1</code> and <code>AngularJS</code>. I refactored a large part to improve
         performances, code readability and
-        reusability. Remove the whole <code>css</code> to create a solid <code>Less</code> design so I
-        could implement a new feature to allow users to edit the theme application for their instances. Also adding
-        features to edit automatic mails with variabilisations.
+        reusability. Developing features as theme personalization, variabilized mails edition and form creation.
       `
     },
     {
@@ -97,7 +95,7 @@ export const cvFr = {
     {
       title: 'Internship in computer research',
       location: 'LRI (Computer Research Laboratory) - Orsay',
-      period: '3 months - 2013"',
+      period: '3 months - 2013',
       content: `
         I worked for the Grid Observatory project whose purpose is to contribute to an experimental theory of large
         grid
@@ -181,6 +179,11 @@ export const cvFr = {
           logo: "dev/csharp.png",
           title: "C#",
           rate: 2.5,
+        },
+        {
+          logo: "",
+          title: "PHP",
+          rate: 4,
         },
         {
           logo: "dev/c++.png",

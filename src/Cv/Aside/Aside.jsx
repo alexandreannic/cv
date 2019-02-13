@@ -82,7 +82,7 @@ export const Aside = ({}) => {
               title={c.title}
               rate={c.rate}
               content={c.content}>
-              {c.content}
+              <div dangerouslySetInnerHTML={{__html: c.content}}/>
             </Skill>
           )}
         </AsideSection>
