@@ -1,13 +1,14 @@
 import React, {createContext, useContext, useState} from 'react'
 import {cvFr} from "./cv.fr"
 import {cvEn} from "./cv.en"
+import {usePersistentState} from 'react-persistent-state'
 
 const defaultLang = navigator.language === 'fr-FR' ? 'fr' : 'en'
 
 const I18nContext = createContext({})
 
 export const I18nContextProvider = ({children}) => {
-  const [lang, changeLang] = useState(defaultLang)
+  const [lang, changeLang] = usePersistentState(defaultLang)
   return (
     <I18nContext.Provider value={{
       m: getMessagesByLang(lang),

@@ -5,7 +5,6 @@ import Icon from "@material-ui/core/Icon/Icon"
 import Fab from "@material-ui/core/Fab/Fab"
 import {useChangeLang, useLang} from "./i18n/I18nContext"
 import Radio from "@material-ui/core/Radio/Radio"
-import FormControl from "@material-ui/core/FormControl/FormControl"
 import RadioGroup from "@material-ui/core/RadioGroup/RadioGroup"
 import FormControlLabel from "@material-ui/core/FormControlLabel/FormControlLabel"
 
