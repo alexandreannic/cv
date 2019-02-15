@@ -42,7 +42,6 @@ export const cvEn = {
     },
   ],
   work: [
-
     {
       logo: 'particeep.jpg',
       title: 'Software engineer',
@@ -50,9 +49,9 @@ export const cvEn = {
       period: '2016 - 2019',
       content: `
         Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
-        Contributing to evolution of REST and <code>GraphQL</code> APIs wrote in <code>Scala</code>.<br/>
+        Contributed to the evolution of REST and <code>GraphQL</code> APIs wrote in <code>Scala</code>.<br/>
         Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
-        Organized tech talks about front-developement good practices and performances.
+        Organized tech talks about front-development good practices and performances.
         <!--like <code>JavaScript</code>-<code>CSS</code> good practices-->
         <!--and performances, <code>Angular2</code> or again flexbox.-->
       `
@@ -63,21 +62,9 @@ export const cvEn = {
       location: 'Particeep - Paris',
       period: '2016',
       content: `
-        Contributing to evolution of a large SaaS application wrote in <code>Java</code> and <code>AngularJS</code>.<br/>
-        Refactoring a large part to improve performances, code readability and reusability.<br/>
-        Developing features as theme personalization, mails edition and form creation.
-      `
-    },
-    {
-      logo: 'activa.png',
-      title: 'Software developer',
-      location: 'Activa Informatique - Paris',
-      period: 'Summers 2013, 2014 and 2015',
-      content: `
-        Developing features on a SaaS application like appointments calendar, real-time chat, statistics.
-        Stack: <code>Java</code>, <code>JPA</code>, <code>JQuery</code>
-        <br/>
-        Developing websites in <code>PHP</code> for minor companies and associations.
+        Contributed to the evolution of a large SaaS application wrote in <code>Java</code> and <code>AngularJS</code>.<br/>
+        Refactored a large part to improve performances, code readability and reusability.<br/>
+        Developed features as theme personalization, mails edition and form creation.
       `
     },
     {
@@ -86,8 +73,8 @@ export const cvEn = {
       location: 'Event Catalyst',
       period: '6 months - 2016',
       content: `
-        Creating a system to allow conferences organisation.
-        Include development of an <code>ASP.NET</code> API, ab <code>ASP.NET</code> application and Android application
+        Created a system to allow conferences organisation.
+        Including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> application and an Android application
         providing features as QR-code check-in, form editing and filling, and visitors management.   
         <!--Include development of a <code>ASP.NET</code> application to allow administrator to manage visitors and -->
         <!--create form; an Android application allowing visitors to check-in through QR-code and answer the-->
@@ -95,13 +82,24 @@ export const cvEn = {
        `
     },
     {
+      logo: 'activa.png',
+      title: 'Software developer',
+      location: 'Activa Informatique - Paris',
+      period: 'Summers 2013, 2014 and 2015',
+      content: `
+        Developed features on a SaaS application developed with <code>Java</code>, <code>JPA</code> and <code>JQuery</code>
+        such as appointments calendar, real-time chat, statistics. <br/>
+        Developed websites in <code>PHP</code> for minor companies and associations.
+      `
+    },
+    {
       logo: 'upmc.png',
       title: 'Master 1 semester project',
       location: 'UPMC (University Pierre et Marie Curie) - Paris',
       period: '6 months - 2015',
       content: `
-        Based on an application of distributed components, my goal was to implement a distributed and autoscalling
-        registry inspired by DHT using technologies as Future, Socket, multithreading or RMI.<br/>
+        Implemented autoscalling registry inspired by DHT based on an application of distributed
+        components, using technologies as Future, Socket, Thread and RMI.
       `
     },
     {
@@ -110,7 +108,7 @@ export const cvEn = {
       period: '3 months - 2013',
       content: `
         Worked on the Grid Observatory project related to the flagship European Grid Infrastructure.
-        My mission was to reconstruct a flow of +200Go/month from 250 sources of unorganized grid usage traces to make
+        Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make
         them workable by researchers.<br/>
       `
     },
@@ -124,7 +122,7 @@ export const cvEn = {
           title: "React",
           rate: 5,
           content: `
-            Used in large application sometimes coupled
+            Used in large applications sometimes coupled
             with <code>Redux</code> and <code>TypeScript</code>.
           `
         },
@@ -133,7 +131,7 @@ export const cvEn = {
           title: "Angular (2+)",
           rate: 5,
           content: `
-            Used in larges applications sometimes coupled with <code>ngrx</code>.
+            Used in large applications sometimes coupled with <code>ngrx</code>.
           `,
         },
         {
@@ -149,7 +147,7 @@ export const cvEn = {
           title: "Play framework",
           rate: 4,
           content: `
-            Used both version to create SaaS app, REST and GraphQL API.
+            Used both versions to create SaaS app, REST and GraphQL API.
           `
         }
       ]
