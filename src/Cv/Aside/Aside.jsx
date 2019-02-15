@@ -7,11 +7,11 @@ import {makeStyles} from "@material-ui/styles"
 import {AsideSection} from "./AsideSection"
 import {useI18n} from "../../i18n/I18nContext"
 
-const avatarSize = '1.5cm'
+const avatarSize = '1.4cm'
 
 const useStyles = makeStyles(t => ({
   root: {
-    width: '6.3cm',
+    width: '6.24cm',
     marginRight: sectionMargin(t) * 1.5
   },
   header: {
@@ -55,15 +55,14 @@ export const Aside = ({}) => {
         <div className={css.avatar}/>
         <div>
           <div className={css.name}>Alexandre Annic</div>
-          <div className={css.job}>Full-stack engineer</div>
+          <div className={css.job}>{i18n.job}</div>
         </div>
       </div>
       <AsideSection>
         <Link icon="email">
           <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
         </Link>
-        {/*<Link icon="phone">06 76 16 24 57</Link>*/}
-        <Link icon="location_on">Paris Area, France</Link>
+        <Link icon="location_on">{i18n.location}</Link>
         <Link iconFa="stack-overflow">
           <a href="https://stackoverflow.com/users/5735030/alexandre-annic">stackoverflow.com/users/5735030</a>
         </Link>

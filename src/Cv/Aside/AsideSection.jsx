@@ -4,8 +4,8 @@ import {cssMixins} from "../../utils/style"
 
 const useStyles = makeStyles(t => ({
   root: {
-    borderBottom: '1px solid ' + t.palette.divider,
     '&:not(:last-of-type)': {
+      borderBottom: '1px solid ' + t.palette.divider,
       paddingBottom: t.spacing.unit * 1.5,
       marginBottom: t.spacing.unit * 1.5,
     }
@@ -22,7 +22,7 @@ export const AsideSection = ({children, title}) => {
   const css = useStyles()
   return (
     <div className={css.root}>
-      <div className={css.title}>{title}</div>
+      {title && <div className={css.title}>{title}</div>}
       {children}
     </div>
   )

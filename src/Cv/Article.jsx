@@ -31,6 +31,7 @@ const useStyles = makeStyles(t => ({
     display: 'flex',
     alignItems: 'center',
     color: t.palette.primary.main,
+    fontSize: cssMixins.fontSmall,
   },
   logo: {
     marginRight: t.spacing.unit,
@@ -41,7 +42,7 @@ const useStyles = makeStyles(t => ({
     fontSize: cssMixins.fontBig,
   },
   text: {
-    marginTop: t.spacing.unit / 2,
+    marginTop: t.spacing.unit / 2.5,
     textAlign: 'justify',
     // color: t.palette.text.secondary,
     fontSize: cssMixins.fontSmall,
@@ -56,7 +57,7 @@ const useStyles = makeStyles(t => ({
     // border: '1px solid ' + t.palette.primary.main,
     // color: t.palette.primary.main,
     // borderRadius: 4,
-    fontWeight: 500,
+    fontWeight: 'bold',
     // marginRight: t.spacing.unit,
   }
 }))

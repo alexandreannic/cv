@@ -3,6 +3,8 @@ import {cssMixins} from "../../utils/style"
 import {Icon} from "@material-ui/core"
 import React from "react"
 
+const iconSize = 19
+
 const useStyles = makeStyles(t => ({
   root: {
     fontSize: cssMixins.fontMedium,
@@ -14,8 +16,8 @@ const useStyles = makeStyles(t => ({
   },
   i: {
     marginRight: t.spacing.unit * 1.5,
-    fontSize: '20px !important',
-    minWidth: 18,
+    fontSize: `${iconSize}px !important`,
+    minWidth: iconSize,
     textAlign: 'center',
     display: 'inline-block',
     // color: t.palette.text.secondary,

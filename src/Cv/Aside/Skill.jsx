@@ -8,8 +8,8 @@ const logoSize = 18
 const logoMargin = t => t.spacing.unit
 const useStyles = makeStyles(t => ({
   root: {
-    marginBottom: t.spacing.unit,
     '&:not(:last-of-type) $text': {
+      marginBottom: t.spacing.unit,
       borderBottom: `1px solid ${t.palette.divider}`,
     }
     // '&:not(:last-of-type)': {
@@ -48,7 +48,7 @@ export const Skill = ({logo, title, rate, children}) => {
   return (
     <div className={css.root}>
       <div className={css.header}>
-        <Logo src={logo} size={20} className={css.logo}/>
+        <Logo src={logo} size={logoSize} className={css.logo}/>
         <div className={css.title}>
           {title}
           <Rate rate={rate}/>
