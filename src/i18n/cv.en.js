@@ -76,10 +76,7 @@ export const cvEn = {
         Created a system to allow conferences organisation.
         Including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> application and an Android application
         providing features as QR-code check-in, form editing and filling, and visitors management.   
-        <!--Include development of a <code>ASP.NET</code> application to allow administrator to manage visitors and -->
-        <!--create form; an Android application allowing visitors to check-in through QR-code and answer the-->
-        <!--form and an <code>ASP.NET</code> REST API to orchestrate both. -->
-       `
+     `
     },
     {
       logo: 'activa.png',
@@ -201,6 +198,7 @@ export const cvEn = {
       title: 'Persistence',
       content: [
         {
+          logo: 'dev/sql.png',
           title: 'SQL',
           rate: 4.5,
           // content: `
@@ -208,6 +206,7 @@ export const cvEn = {
           // `
         },
         {
+          logo: 'dev/nosql.png',
           title: 'NoSQL',
           rate: 3,
           // content: `Used document-oriented databases mainly during studies projects`
