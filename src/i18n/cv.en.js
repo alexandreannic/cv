@@ -1,4 +1,6 @@
 export const cvEn = {
+  job: 'Full-stack engineer',
+  location: 'Paris Area, France',
   education: [
     {
       title: 'Master STL (Science and Software Technology)',
@@ -11,7 +13,7 @@ export const cvEn = {
         Multithreaded and distributed programming
         (<code>Scala</code>, <code>OCaml</code>, <code>Java</code>, <code>C</code>) -
         Web app (security, tracking)
-    `
+      `
     },
     {
 
@@ -33,7 +35,7 @@ export const cvEn = {
         Unix architecture, bash, script -
         POO <code>Java</code>, <code>C++</code> -
         <code>SQL</code> -
-        System programming in C (pipe, signal, fork, thread) -
+        System programming in <code>C</code> (pipe, signal, fork, thread) -
         Networking (DHCP, DNS, Firewall) -
         Computer architecture
       `,
@@ -43,53 +45,63 @@ export const cvEn = {
 
     {
       logo: 'particeep.jpg',
-      title: 'Full-stack engineer',
+      title: 'Software engineer',
       location: 'Particeep - Paris',
       period: '2016 - 2019',
       content: `
-            Led front team and created several applications from scratch
-            in <code>React</code>/<code>Angular</code>, <code>Scala</code> and with continuous integration
-            with <code>Jenkins</code> as <b>Medef accélerateur</b>.<br/>
-            Contributing to evolution of REST and <code>GraphQL</code> APIs wrote in <code>Scala</code>.<br/>
-            Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
-            Organized workshops for my team on topics like <code>JavaScript</code>-<code>CSS</code> good practices
-            and performances, <code>Angular2</code> or again <code>flexbox</code>.
-          `
+        Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
+        Contributing to evolution of REST and <code>GraphQL</code> APIs wrote in <code>Scala</code>.<br/>
+        Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
+        Organized tech talks about front-developement good practices and performances.
+        <!--like <code>JavaScript</code>-<code>CSS</code> good practices-->
+        <!--and performances, <code>Angular2</code> or again flexbox.-->
+      `
     },
     {
       logo: 'particeep.jpg',
-      title: 'Full-stack developer internship',
+      title: 'Software developer internship',
       location: 'Particeep - Paris',
       period: '2016',
       content: `
-        Contributing to evolution of a large SaaS application wrote in <code>Play framework
-        1</code> and <code>AngularJS</code>. I refactored a large part to improve
-        performances, code readability and
-        reusability. Developing features as theme personalization, variabilized mails edition and form creation.
+        Contributing to evolution of a large SaaS application wrote in <code>Java</code> and <code>AngularJS</code>.<br/>
+        Refactoring a large part to improve performances, code readability and reusability.<br/>
+        Developing features as theme personalization, mails edition and form creation.
       `
     },
     {
       logo: 'activa.png',
-      title: 'Full-stack developer',
+      title: 'Software developer',
       location: 'Activa Informatique - Paris',
       period: 'Summers 2013, 2014 and 2015',
       content: `
-        Developping features on a SaaS application like appointments calendar, real-time chat, statistics and
-        refactoring front side.
-        Stack: <code>Play framework 1</code>, <code>JPA</code>, <code>JQuery</code>
+        Developing features on a SaaS application like appointments calendar, real-time chat, statistics.
+        Stack: <code>Java</code>, <code>JPA</code>, <code>JQuery</code>
         <br/>
-        Developing couple websites in <code>PHP</code> for association or hotel.
+        Developing websites in <code>PHP</code> for minor companies and associations.
       `
     },
     {
       logo: 'upmc.png',
-      title: 'Semester student project',
+      title: 'Software engineer',
+      location: 'Event Catalyst',
+      period: '6 months - 2016',
+      content: `
+        Creating a system to allow conferences organisation.
+        Include development of an <code>ASP.NET</code> API, ab <code>ASP.NET</code> application and Android application
+        providing features as QR-code check-in, form editing and filling, and visitors management.   
+        <!--Include development of a <code>ASP.NET</code> application to allow administrator to manage visitors and -->
+        <!--create form; an Android application allowing visitors to check-in through QR-code and answer the-->
+        <!--form and an <code>ASP.NET</code> REST API to orchestrate both. -->
+       `
+    },
+    {
+      logo: 'upmc.png',
+      title: 'Master 1 semester project',
       location: 'UPMC (University Pierre et Marie Curie) - Paris',
       period: '6 months - 2015',
       content: `
         Based on an application of distributed components, my goal was to implement a distributed and autoscalling
-         registry inspired by DHT allowing to "colonize" the machines of a network to avoid requests saturation.<br/>
-        <code>Java</code> (Future, Socket, multithreading, RMI) and scripts <code>Perl</code>.
+        registry inspired by DHT using technologies as Future, Socket, multithreading or RMI.<br/>
       `
     },
     {
@@ -97,58 +109,48 @@ export const cvEn = {
       location: 'LRI (Computer Research Laboratory) - Orsay',
       period: '3 months - 2013',
       content: `
-        I worked for the Grid Observatory project whose purpose is to contribute to an experimental theory of large
-        grid
-        systems by integrating the collection of data on the behaviour of the flagship European Grid Infrastructure.
-        My mission was to reconstruct the grid usage traces to make them accessible to researchers.<br/>
-        <code>Perl</code> <code>SQL</code> <code>Script shell</code>
+        Worked on the Grid Observatory project related to the flagship European Grid Infrastructure.
+        My mission was to reconstruct a flow of +200Go/month from 250 sources of unorganized grid usage traces to make
+        them workable by researchers.<br/>
       `
     },
-    {
-      logo: 'upmc.png',
-      title: 'Création d\'une application concurrente et répartie',
-      location: 'Projet universitaire de Master 1',
-      period: '2 mois - 2015',
-      content: `
-          Permet à des musiciens d'effectuer des jams sessions en temps réel.
-          Développement du serveur <code>TCP/IP</code> en <code>C</code> redistribuant les sons
-          mixés selon les musiciens et anticipant le délai et les instabilités du réseau.
-          Développement du client en <code>Java</code> avec interface Swing (inscription, gestion des
-          salons, jouer).
-         `
-    },
-
   ],
   skills: [
     {
       title: 'Framework',
       content: [
         {
-          logo: "dev/angular.png",
-          title: "Angular (2+)",
-          rate: 5,
-          content: `
-              Used in larges applications (~200 components) sometimes coupled <code>ngrx</code>.
-            `,
-        },
-        {
           logo: "dev/react.png",
           title: "React",
           rate: 5,
           content: `
-              Used in large application (+100 components) sometimes coupled
-              with <code>Redux</code> and <code>TypeScript</code>.
-            `
+            Used in large application sometimes coupled
+            with <code>Redux</code> and <code>TypeScript</code>.
+          `
+        },
+        {
+          logo: "dev/angular.png",
+          title: "Angular (2+)",
+          rate: 5,
+          content: `
+            Used in larges applications sometimes coupled with <code>ngrx</code>.
+          `,
         },
         {
           logo: "dev/angularjs.png",
           title: "AngularJS",
-          rate: 4
+          rate: 4,
+          content: `
+            
+          `
         },
         {
           logo: "dev/play.png",
           title: "Play framework",
-          rate: 4
+          rate: 4,
+          content: `
+            Used both version to create SaaS app, REST and GraphQL API.
+          `
         }
       ]
     },
@@ -200,14 +202,24 @@ export const cvEn = {
     {
       title: 'Persistence',
       content: [
-        {title: 'SQL', rate: 4.5},
-        {title: 'NoSQL', rate: 3},
+        {
+          title: 'SQL',
+          rate: 4.5,
+          // content: `
+          //   Mainly <code>PostGres</code> anad <code>MySQL</code>. Script <code>PL/SQL</code>
+          // `
+        },
+        {
+          title: 'NoSQL',
+          rate: 3,
+          // content: `Used document-oriented databases mainly during studies projects`
+        },
       ]
     }
   ],
   various: [
     'Diploma for youth leaders and workers (BAFA)',
-    'Sport: Crossfit, climbing, running',
+    `<div style="white-space: nowrap">Daily sport: crossfit, climbing, running</div>`,
     'Driving licence',
   ]
 }
