@@ -2,6 +2,7 @@ import React from "react"
 import {makeStyles} from "@material-ui/styles"
 import {cssMixins} from "../utils/style"
 import Logo from "../utils/Logo"
+import classNames from 'classnames'
 
 const logoSize = 20
 
@@ -68,7 +69,7 @@ export const Article = ({title, period, location, logo, honor, children}) => {
     <div className={css.Article}>
       <div className={css.body}>
         <div className={css.header}>
-          <div className={css.title}>
+          <div className={classNames('Article_title', css.title)}>
             {title}
           </div>
           <div className={css.period}>{period}</div>
@@ -77,7 +78,7 @@ export const Article = ({title, period, location, logo, honor, children}) => {
           {/*<Logo className={css.logo} src={logo} size={logoSize}/>*/}
           {location}
         </div>
-        {children && <div className={css.text}>
+        {children && <div className={classNames('Article_text', css.text)}>
           {honor && <span className={css.honor}>{honor} - </span>}
           {children}
         </div>}
