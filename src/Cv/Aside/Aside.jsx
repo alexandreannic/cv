@@ -6,8 +6,9 @@ import {cssMixins} from "../../utils/style"
 import {makeStyles} from "@material-ui/styles"
 import {AsideSection} from "./AsideSection"
 import {useI18n} from "../../i18n/I18nContext"
+import Logo from "../../utils/Logo"
 
-const avatarSize = '1.4cm'
+const avatarSize = '1.50cm'
 
 const useStyles = makeStyles(t => ({
   root: {
@@ -21,8 +22,8 @@ const useStyles = makeStyles(t => ({
   },
   avatar: {
     background: 'rgba(0,0,0,.4)',
-    height: avatarSize,
-    width: avatarSize,
+    // height: avatarSize,
+    // width: avatarSize,
     borderRadius: '50%',
     marginRight: t.spacing.unit * 1.5,
   },
@@ -52,7 +53,7 @@ export const Aside = ({}) => {
   return (
     <main className={css.root}>
       <div className={css.header}>
-        <div className={css.avatar}/>
+        <Logo className={css.avatar} size={avatarSize} src="avatar.jpg"/>
         <div>
           <div className={css.name}>Alexandre Annic</div>
           <div className={css.job}>{i18n.job}</div>
