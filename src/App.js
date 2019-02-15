@@ -72,17 +72,17 @@ const App = () => {
           <RadioSetItem value="en">En</RadioSetItem>
         </RadioSet>
         <Tooltip title="Sources code">
-          <Button variant="outlined" color="primary" href="https://github.com/alexandreannic/cv">
+          <Button variant="outlined" target="_blank" color="primary" href="https://github.com/alexandreannic/cv">
             <Icon className="fab fa-github"/>
           </Button>
         </Tooltip>
         <Tooltip title="Print">
-          <Button variant="outlined" onClick={() => window.print()} color="primary">
+          <Button variant="outlined" onClick={window.print} color="primary">
             <Icon>print</Icon>
           </Button>
         </Tooltip>
         <Tooltip title="Download as PDF">
-          <Button variant="outlined" href="/Alexandre_Annic-CV.pdf" target="_blank" color="primary">
+          <Button variant="outlined" href={lang === 'fr' ? '/Alexandre_Annic-CV-fr.pdf' : '/Alexandre_Annic-CV-en.pdf'} target="_blank" color="primary">
             <Icon>cloud_download</Icon>
           </Button>
         </Tooltip>
