@@ -89,9 +89,6 @@ export const Aside = () => {
           )}
         </AsideSection>
       )}
-      {/*<hr className={classes.divider}/>*/}
-      {/*Algorithmes: complexité, compression, arbre/graphe, hachage, géometrie,*/}
-      {/*<hr className={classes.divider}/>*/}
       <AsideSection title={i18n.various.label}>
         {i18n.various.articles.map(v =>
           <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
@@ -100,18 +97,3 @@ export const Aside = () => {
     </main>
   )
 }
-
-
-// const Info = ({classes, icon, children}) =>
-//   <main className={classes.Info}>
-//     <Icon className={classes.Info_i}>{icon}</Icon>
-//     {children}
-//   </main>
-//
-// const InfoFa = ({classes, icon, children}) =>
-//   <main className={classes.Info}>
-//     <i className={`fab fa-${icon} ${classes.Info_i}`}/>
-//     {children}
-//   </main>
-
-
