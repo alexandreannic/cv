@@ -218,9 +218,12 @@ export const cvEn = {
       ]
     }
   ],
-  various: [
-    'Diploma for youth leaders and workers (BAFA)',
-    `<div style="white-space: nowrap">Daily sport: crossfit, climbing, running</div>`,
-    'Driving licence',
-  ]
+  various: {
+    label: 'Various',
+    articles: [
+      'Diploma for youth leaders and workers (BAFA)',
+      `<div style="white-space: nowrap">Daily sport: crossfit, climbing, running</div>`,
+      'Driving licence',
+    ]
+  }
 }

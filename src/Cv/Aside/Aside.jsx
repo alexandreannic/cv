@@ -33,7 +33,8 @@ const useStyles = makeStyles(t => ({
   },
   job: {
     color: t.palette.primary.main,
-    fontSize: cssMixins.fontBig,
+    fontSize: cssMixins.rem(1.5),
+    fontWeight: 500,
   },
   divider: {
     height: 1,
@@ -47,7 +48,7 @@ const useStyles = makeStyles(t => ({
   }
 }))
 
-export const Aside = ({}) => {
+export const Aside = () => {
   const css = useStyles()
   const i18n = useI18n()
   return (
@@ -60,12 +61,13 @@ export const Aside = ({}) => {
         </div>
       </div>
       <AsideSection>
+        <Link icon="location_on">{i18n.location}</Link>
         <Link icon="email">
           <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
         </Link>
-        <Link icon="location_on">{i18n.location}</Link>
         <Link iconFa="stack-overflow">
-          <a href="https://stackoverflow.com/users/5735030/alexandre-annic" target="_blank">stackoverflow.com/users/5735030</a>
+          <a href="https://stackoverflow.com/users/5735030/alexandre-annic"
+             target="_blank">stackoverflow.com/users/5735030</a>
         </Link>
         <Link iconFa="github">
           <a href="https://github.com/alexandreannic" target="_blank">github.com/alexandreannic</a>
@@ -90,8 +92,8 @@ export const Aside = ({}) => {
       {/*<hr className={classes.divider}/>*/}
       {/*Algorithmes: complexité, compression, arbre/graphe, hachage, géometrie,*/}
       {/*<hr className={classes.divider}/>*/}
-      <AsideSection title="Various">
-        {i18n.various.map(v =>
+      <AsideSection title={i18n.various.label}>
+        {i18n.various.articles.map(v =>
           <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
         )}
       </AsideSection>
