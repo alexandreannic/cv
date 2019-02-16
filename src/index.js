@@ -15,6 +15,10 @@ const muiTheme = createMuiTheme({
       ...blue,
       500: '#1a73e8',
     },
+    // text: {
+      // primary: '#202124',
+      // secondary: '#5f6368',
+    // },
     background: {
       default: '#F2F2F2'
     }

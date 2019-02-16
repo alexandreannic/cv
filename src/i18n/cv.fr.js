@@ -55,7 +55,7 @@ export const cvFr = {
         content: `
         Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
         Contribution à l'évolution d'API REST et GraphQL codées en <code>Scala</code>.<br/>
-        Dévelopement de SDK <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
+        Développement de SDK <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
         Organisation de workshops concernant le développement front.
       `
       },
@@ -152,7 +152,7 @@ export const cvFr = {
       ]
     },
     {
-      title: 'Languages',
+      title: 'Langages',
       content: [
         {
           logo: "dev/ts.png",
@@ -216,9 +216,12 @@ export const cvFr = {
       ]
     }
   ],
-  various: [
-    'BAFA',
-    `<div style="white-space: nowrap">Sport quotidien: crossfit, escalade</div>`,
-    'Permis B',
-  ]
+  various: {
+    label: 'Divers',
+    articles: [
+      'BAFA',
+      `<div style="white-space: nowrap">Sport quotidien: crossfit, escalade</div>`,
+      'Permis B',
+    ]
+  }
 }

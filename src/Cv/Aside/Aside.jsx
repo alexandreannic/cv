@@ -33,7 +33,8 @@ const useStyles = makeStyles(t => ({
   },
   job: {
     color: t.palette.primary.main,
-    fontSize: cssMixins.fontBig,
+    fontSize: cssMixins.rem(1.5),
+    fontWeight: 500,
   },
   divider: {
     height: 1,
@@ -47,7 +48,7 @@ const useStyles = makeStyles(t => ({
   }
 }))
 
-export const Aside = ({}) => {
+export const Aside = () => {
   const css = useStyles()
   const i18n = useI18n()
   return (
@@ -90,8 +91,8 @@ export const Aside = ({}) => {
       {/*<hr className={classes.divider}/>*/}
       {/*Algorithmes: complexité, compression, arbre/graphe, hachage, géometrie,*/}
       {/*<hr className={classes.divider}/>*/}
-      <AsideSection title="Various">
-        {i18n.various.map(v =>
+      <AsideSection title={i18n.various.label}>
+        {i18n.various.articles.map(v =>
           <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
         )}
       </AsideSection>
