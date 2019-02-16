@@ -10,7 +10,7 @@ import {RadioSet, RadioSetItem} from "./Cv/RadioSet"
 const useStyles = makeStyles(t => ({
   '@global': {
     '@media print': {
-      '[class*="MuiTooltip"]': {
+      '[role="tooltip"]': {
         display: 'none',
       },
     },
