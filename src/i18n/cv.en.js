@@ -54,7 +54,7 @@ export const cvEn = {
         period: '2016 - 2019',
         content: `
         Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
-        Contributed to the evolution of REST and <code>GraphQL</code> APIs wrote in <code>Scala</code>.<br/>
+        Contributed to the evolution of REST and GraphQL API wrote in <code>Scala</code>.<br/>
         Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
         Organized tech talks about front-development good practices and performances.
       `
@@ -67,7 +67,7 @@ export const cvEn = {
         content: `
         Contributed to the evolution of a large SaaS application wrote in <code>Java</code> and <code>AngularJS</code>.<br/>
         Refactored a large part to improve performances, code readability and reusability.<br/>
-        Developed features as theme personalization, mails edition and form creation.
+        Developed features as theme personalization, mails edition and online payment.
       `
       },
       {
@@ -148,7 +148,7 @@ export const cvEn = {
           title: "Play framework",
           rate: 4,
           content: `
-            Used both versions to create SaaS app, REST and GraphQL API.
+            Used both versions to create SaaS applications, REST and GraphQL API.
           `
         }
       ]

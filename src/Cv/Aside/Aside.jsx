@@ -65,13 +65,13 @@ export const Aside = ({}) => {
         </Link>
         <Link icon="location_on">{i18n.location}</Link>
         <Link iconFa="stack-overflow">
-          <a href="https://stackoverflow.com/users/5735030/alexandre-annic">stackoverflow.com/users/5735030</a>
+          <a href="https://stackoverflow.com/users/5735030/alexandre-annic" target="_blank">stackoverflow.com/users/5735030</a>
         </Link>
         <Link iconFa="github">
-          <a href="https://github.com/alexandreannic">github.com/alexandreannic</a>
+          <a href="https://github.com/alexandreannic" target="_blank">github.com/alexandreannic</a>
         </Link>
-        <Link iconFa="linkedin" href="https://www.linkedin.com/in/alexandreannic/">
-          <a href="https://github.com/alexandreannic">linkedin.com/in/alexandreannic</a>
+        <Link iconFa="linkedin">
+          <a href="https://www.linkedin.com/in/alexandreannic/" target="_blank">linkedin.com/in/alexandreannic</a>
         </Link>
       </AsideSection>
       {i18n.skills.map(s =>
