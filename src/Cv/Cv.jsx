@@ -1,7 +1,6 @@
 import {Aside} from "./Aside/Aside"
 import Section from "./Section"
 import {Article} from "./Article"
-import Code from "../utils/Code"
 import React from "react"
 import {cssMixins} from "../utils/style"
 import {makeStyles} from "@material-ui/styles"

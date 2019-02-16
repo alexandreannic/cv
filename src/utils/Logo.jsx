@@ -1,7 +1,6 @@
 import React from "react"
 
-const Logo = ({className, src, size}) => {
-  size || (size = 40)
+const Logo = ({className, src, size = 140}) => {
   return (
     <div className={className} style={{
       backgroundImage: `url(/logo/${src})`,
