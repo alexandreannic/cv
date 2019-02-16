@@ -61,12 +61,13 @@ export const Aside = () => {
         </div>
       </div>
       <AsideSection>
+        <Link icon="location_on">{i18n.location}</Link>
         <Link icon="email">
           <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
         </Link>
-        <Link icon="location_on">{i18n.location}</Link>
         <Link iconFa="stack-overflow">
-          <a href="https://stackoverflow.com/users/5735030/alexandre-annic" target="_blank">stackoverflow.com/users/5735030</a>
+          <a href="https://stackoverflow.com/users/5735030/alexandre-annic"
+             target="_blank">stackoverflow.com/users/5735030</a>
         </Link>
         <Link iconFa="github">
           <a href="https://github.com/alexandreannic" target="_blank">github.com/alexandreannic</a>

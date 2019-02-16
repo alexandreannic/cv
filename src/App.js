@@ -18,7 +18,8 @@ const useStyles = makeStyles(t => ({
     },
     a: {
       textDecoration: 'none',
-      color: t.palette.primary,
+      color: t.palette.primary.main,
+      fontWeight: 500,
     },
     code: {
       // background: 'rgba(0,0,0,.04)', // fade(t.palette.primary.main, 0.1),
