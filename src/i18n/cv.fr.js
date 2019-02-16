@@ -54,7 +54,7 @@ export const cvFr = {
         period: '2016 - 2019',
         content: `
         Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
-        Contribution à l'évolution d'APIs REST et <code>GraphQL</code> codées en <code>Scala</code>.<br/>
+        Contribution à l'évolution d'API REST et GraphQL codées en <code>Scala</code>.<br/>
         Dévelopement de SDK <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
         Organisation de workshops concernant le développement front.
       `
@@ -67,7 +67,7 @@ export const cvFr = {
         content: `
         Contribution au développement d'une application SaaS codée en <code>Java</code> et <code>AngularJS</code>.<br/>
         Réecriture de l'ensemble de l'application pour améliorer les performances, la lisibilité et la réutilisabilité du code.<br/>
-        Développement de fonctionnalités telles que la personnalisation de l'apparence et l'édition de mails.
+        Développement de fonctionnalités telles que: personnalisation de l'apparence, édition de mails et paiement en ligne.
       `
       },
       {
@@ -77,8 +77,8 @@ export const cvFr = {
         period: '6 mois - 2016',
         content: `
           Développement d'un système d'organisation de conférences, comprenant une API <code>ASP.NET</code>,
-          une application <code>ASP.NET</code> et Android.<br/>
-          Fonctionnalités: check-in QR-code, formulaire éditable, gestion des visiteurs...
+          une application <code>ASP.NET</code> et une application Android.<br/>
+          Fonctionnalités: que check-in QR-code, formulaire éditable, gestion des visiteurs.
        `
       },
       {
@@ -146,7 +146,7 @@ export const cvFr = {
           title: "Play framework",
           rate: 4,
           content: `
-            Utilisation des 2 versions pour des applications SaSS et des API REST et GraphQL
+            Utilisation des 2 versions pour des applications SaaS et des API REST et GraphQL
           `
         }
       ]
