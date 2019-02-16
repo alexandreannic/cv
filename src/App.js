@@ -9,6 +9,11 @@ import {RadioSet, RadioSetItem} from "./Cv/RadioSet"
 
 const useStyles = makeStyles(t => ({
   '@global': {
+    '@media print': {
+      '#print-tooltip': {
+        display: 'none',
+      },
+    },
     body: {
       fontFamily: 'Google Sans, Helvetica,Arial,sans-serif',
       margin: 0,
@@ -77,13 +82,13 @@ const App = () => {
             <Icon className="fab fa-github"/>
           </Button>
         </Tooltip>
-        <Tooltip title="Print">
+        <Tooltip title="Print" id="print-tooltip">
           <Button variant="outlined" onClick={window.print} color="primary">
             <Icon>print</Icon>
           </Button>
         </Tooltip>
         <Tooltip title="Download as PDF">
-          <Button variant="outlined" href={lang === 'fr' ? '/Alexandre_Annic-CV-fr.pdf' : '/Alexandre_Annic-CV-en.pdf'} target="_blank" color="primary">
+          <Button variant="outlined" href={`/Alexandre_Annic-CV-${lang}.pdf`} target="_blank" color="primary">
             <Icon>cloud_download</Icon>
           </Button>
         </Tooltip>
