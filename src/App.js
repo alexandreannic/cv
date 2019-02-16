@@ -10,7 +10,7 @@ import {RadioSet, RadioSetItem} from "./Cv/RadioSet"
 const useStyles = makeStyles(t => ({
   '@global': {
     '@media print': {
-      '#print-tooltip': {
+      '[class*="MuiTooltip"]': {
         display: 'none',
       },
     },
@@ -82,7 +82,7 @@ const App = () => {
             <Icon className="fab fa-github"/>
           </Button>
         </Tooltip>
-        <Tooltip title="Print" id="print-tooltip">
+        <Tooltip title="Print (CTRL+P)">
           <Button variant="outlined" onClick={window.print} color="primary">
             <Icon>print</Icon>
           </Button>
