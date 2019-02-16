@@ -1,7 +1,6 @@
 import React from "react"
 import {makeStyles} from "@material-ui/styles"
 import {cssMixins} from "../utils/style"
-import Logo from "../utils/Logo"
 import classNames from 'classnames'
 
 const logoSize = 20

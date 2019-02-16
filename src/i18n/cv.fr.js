@@ -130,7 +130,7 @@ export const cvFr = {
           title: "Angular (2+)",
           rate: 5,
           content: `
-            Utilisé dans de grande applications parfois avec <code>ngrx</code>.
+            Utilisé dans de grande applications avec <code>ngrx</code>.
           `,
         },
         {
