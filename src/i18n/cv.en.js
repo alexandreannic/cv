@@ -48,16 +48,26 @@ export const cvEn = {
     label: 'Work experiences',
     articles: [
       {
+        title: 'Big Data engineer',
+        location: 'Mediarithmics - Paris',
+        period: '2019 - 2020',
+        content: `
+          Developed a <code>Node.js</code> application to automate the import of a large volume of data
+          (several tens of GB daily). Controlled by a <code>React</code> UI,
+          it allows launching <code>Dockers</code> containers, linked by message queues,
+          orchestrated by <code>Kubernetes</code>.
+        `
+      },
+      {
         logo: 'particeep.jpg',
         title: 'Software engineer',
         location: 'Particeep - Paris',
         period: '2016 - 2019',
         content: `
-        Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
-        Contributed to the evolution of REST and GraphQL API wrote in <code>Scala</code>.<br/>
-        Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
-        Organized tech talks about front-development good practices and performances.
-      `
+          Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
+          Contributed to the evolution of REST and GraphQL API wrote in <code>Scala</code>.<br/>
+          Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
+        `
       },
       {
         logo: 'particeep.jpg',
@@ -65,10 +75,10 @@ export const cvEn = {
         location: 'Particeep - Paris',
         period: '2016',
         content: `
-        Contributed to the evolution of a large SaaS application wrote in <code>Java</code> and <code>AngularJS</code>.<br/>
-        Refactored a large part to improve performances, code readability and reusability.<br/>
-        Developed features as theme personalization, mails edition and online payment.
-      `
+          Contributed to the evolution of a SaaS application in <code>Java</code> and <code>AngularJS</code>.<br/>
+          Refactored a large part to improve performances, code readability and reusability.<br/>
+          Developed features as theme personalization, mails edition and online payment.
+        `
       },
       {
         logo: 'upmc.png',
@@ -76,10 +86,8 @@ export const cvEn = {
         location: 'Event Catalyst',
         period: '6 months - 2016',
         content: `
-        Created a system to allow conferences organisation.
-        Including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> application and an Android application
-        providing features as QR-code check-in, form editing and filling and visitors management.   
-     `
+          Developed an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an Android application
+        `
       },
       {
         logo: 'activa.png',
@@ -140,7 +148,7 @@ export const cvEn = {
           title: "AngularJS",
           rate: 4,
           content: `
-            
+
           `
         },
         {

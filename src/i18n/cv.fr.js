@@ -48,6 +48,16 @@ export const cvFr = {
     label: 'Expériences',
     articles: [
       {
+        title: 'Ingénieur Big Data',
+        location: 'Mediarithmics - Paris',
+        period: '2019 - 2020',
+        content: `
+          Développement d’une application <code>Node.js</code> d'automatisant l’imports d’un important volume de données
+          (plusieurs dizaines de Go quotidien). Contrôlée par une UI permettant de lancer
+          des containers <code>Dockers</code>, liés par des files, orchestré par <code>K8s</code>.
+        `
+      },
+      {
         logo: 'particeep.jpg',
         title: 'Ingénieur logiciel',
         location: 'Particeep - Paris',
@@ -56,7 +66,6 @@ export const cvFr = {
         Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
         Contribution à l'évolution d'API REST et GraphQL codées en <code>Scala</code>.<br/>
         Développement de SDK <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
-        Organisation de workshops concernant le développement front.
       `
       },
       {
@@ -65,10 +74,10 @@ export const cvFr = {
         location: 'Particeep - Paris',
         period: '2016',
         content: `
-        Contribution au développement d'une application SaaS codée en <code>Java</code> et <code>AngularJS</code>.<br/>
-        Réecriture de l'ensemble de l'application pour améliorer les performances, la lisibilité et la réutilisabilité du code.<br/>
-        Développement de fonctionnalités telles que: personnalisation de l'apparence, édition de mails et paiement en ligne.
-      `
+          Contribution au développement d'une application SaaS codée en <code>Java</code> et <code>AngularJS</code>.<br/>
+          Refactoring complet afin d'améliorer les performances et la réutilisabilité du code.<br/>
+          Développement de fonctionnalités telles que: personnalisation de l'apparence, édition de mails et paiement en ligne.
+        `
       },
       {
         logo: 'upmc.png',
@@ -76,9 +85,8 @@ export const cvFr = {
         location: 'Event Catalyst',
         period: '6 mois - 2016',
         content: `
-          Développement d'un système d'organisation de conférences, comprenant une API <code>ASP.NET</code>,
-          une application <code>ASP.NET</code> et une application Android.<br/>
-          Fonctionnalités: que check-in QR-code, formulaire éditable, gestion des visiteurs.
+          Développement d'une API <code>ASP.NET</code>,
+          d'une application Web <code>ASP.NET</code> et Android.<br/>
        `
       },
       {
@@ -87,10 +95,10 @@ export const cvFr = {
         location: 'Activa Informatique - Paris',
         period: 'Étés 2013, 2014 and 2015',
         content: `
-        Développement de fonctionnalités sur une application SaaS codée en <code>Java</code>, <code>JPA</code> et <code>JQuery</code> 
-        telles que: calendrier de rendez-vous, discussion instantanée, statistiques.<br/>
-        Création de sites web en <code>PHP</code> pour des PME et des associations. 
-      `
+          Développement de fonctionnalités sur une application SaaS codée en <code>Java</code>, <code>JPA</code> et <code>JQuery</code>
+          telles que: calendrier de rendez-vous, discussion instantanée, statistiques.<br/>
+          Création de sites web en <code>PHP</code> pour des PME et des associations.
+        `
       },
       {
         logo: 'upmc.png',
@@ -99,7 +107,7 @@ export const cvFr = {
         period: '6 mois - 2015',
         content: `
           Développement d'un registre auto-adaptatif inspiré du principe des DHT pour une application distribuée.
-          Technologies: Future, Socket, Thread et RMI. 
+          Technologies: Future, Socket, Thread et RMI.
         `
       },
       {
@@ -138,7 +146,7 @@ export const cvFr = {
           title: "AngularJS",
           rate: 4,
           content: `
-            
+
           `
         },
         {
