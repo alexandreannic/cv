@@ -2,12 +2,12 @@ import React from "react"
 import {cssMixins} from "../utils/style"
 import {makeStyles} from "@material-ui/styles"
 
-export const sectionMargin = t => t.spacing.unit * 2
+export const sectionMargin = t => t.spacing(1) * 2
 
 const useStyles = makeStyles(t => ({
   Section: {
     border: '1px solid ' + t.palette.divider,
-    padding: t.spacing.unit * 2,
+    padding: t.spacing(2),
     marginBottom: sectionMargin(t),
     borderRadius: cssMixins.radius,
   },
@@ -16,11 +16,11 @@ const useStyles = makeStyles(t => ({
     fontWeight: 500,
     display: 'flex',
     alignItems: 'center',
-    marginBottom: t.spacing.unit * 1.5,
+    marginBottom: t.spacing(1.5),
     lineHeight: 1,
   },
   i: {
-    marginRight: t.spacing.unit,
+    marginRight: t.spacing(1),
   }
 }))
 

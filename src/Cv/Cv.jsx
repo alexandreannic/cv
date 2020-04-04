@@ -8,7 +8,8 @@ import {useI18n} from "../i18n/I18nContext"
 
 const useStyles = makeStyles(t => ({
   content: {
-    padding: t.spacing.unit * 2,
+    background: t.palette.background.paper,
+    padding: t.spacing(2),
     lineHeight: cssMixins.lineHeight,
     display: 'flex',
   },
@@ -25,8 +26,9 @@ export const Cv = () => {
       <Aside/>
       <div className={css.body}>
         <Section icon="school" title={i18n.education.label}>
-          {i18n.education.articles.map(e =>
+          {i18n.education.articles.map((e, i) =>
             <Article
+              key={i}
               title={e.title}
               honor={e.honor}
               period={e.period}
@@ -39,8 +41,9 @@ export const Cv = () => {
         </Section>
 
         <Section icon="business_center" title={i18n.work.label}>
-          {i18n.work.articles.map(e =>
+          {i18n.work.articles.map((e, i) =>
             <Article
+              key={i}
               title={e.title}
               honor={e.honor}
               period={e.period}

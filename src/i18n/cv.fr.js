@@ -72,7 +72,7 @@ export const cvFr = {
         logo: 'particeep.jpg',
         title: 'Stage développeur logiciel',
         location: 'Particeep - Paris',
-        period: '2016',
+        period: '2016  (6 mois)',
         content: `
           Contribution au développement d'une application SaaS codée en <code>Java</code> et <code>AngularJS</code>.<br/>
           Refactoring complet afin d'améliorer les performances et la réutilisabilité du code.<br/>
@@ -83,10 +83,12 @@ export const cvFr = {
         logo: 'upmc.png',
         title: 'Ingénieur logiciel',
         location: 'Event Catalyst',
-        period: '6 mois - 2016',
+        period: '2016 (6 mois)',
         content: `
-          Développement d'une API <code>ASP.NET</code>,
-          d'une application Web <code>ASP.NET</code> et Android.<br/>
+          Développement d'un système d'organisation de conférences, comprenant une API <code>ASP.NET</code>,
+          une Web application <code>ASP.NET</code> et une application Android.<br/>
+          Fonctionnalités: que check-in QR-code, formulaire éditable, gestion des visiteurs.
+
        `
       },
       {
@@ -100,16 +102,16 @@ export const cvFr = {
           Création de sites web en <code>PHP</code> pour des PME et des associations.
         `
       },
-      {
-        logo: 'upmc.png',
-        title: 'Projet de Master 1',
-        location: 'UPMC (Université Pierre et Marie Curie) - Paris',
-        period: '6 mois - 2015',
-        content: `
-          Développement d'un registre auto-adaptatif inspiré du principe des DHT pour une application distribuée.
-          Technologies: Future, Socket, Thread et RMI.
-        `
-      },
+      // {
+      //   logo: 'upmc.png',
+      //   title: 'Projet de Master 1',
+      //   location: 'UPMC (Université Pierre et Marie Curie) - Paris',
+      //   period: '6 mois - 2015',
+      //   content: `
+      //     Développement d'un registre auto-adaptatif inspiré du principe des DHT pour une application distribuée.
+      //     Technologies: Future, Socket, Thread et RMI.
+      //   `
+      // },
       {
         title: 'Stage de recherche informatique',
         location: 'LRI (au Laboratoire de Recherche Informatique) - Orsay',

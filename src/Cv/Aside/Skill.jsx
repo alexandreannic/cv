@@ -5,11 +5,11 @@ import React from "react"
 import {makeStyles} from "@material-ui/styles"
 
 const logoSize = 18
-const logoMargin = t => t.spacing.unit
+const logoMargin = t => t.spacing(1)
 const useStyles = makeStyles(t => ({
   root: {
     '&:not(:last-of-type) $text': {
-      marginBottom: t.spacing.unit,
+      marginBottom: t.spacing(1),
       borderBottom: `1px solid ${t.palette.divider}`,
     }
     // '&:not(:last-of-type)': {
@@ -37,8 +37,8 @@ const useStyles = makeStyles(t => ({
   text: {
     marginLeft: logoMargin(t) + logoSize,
     fontSize: cssMixins.fontSmall,
-    marginTop: t.spacing.unit / 4,
-    paddingBottom: t.spacing.unit,
+    marginTop: t.spacing(1) / 4,
+    paddingBottom: t.spacing(1),
     color: t.palette.text.secondary,
   }
 }))

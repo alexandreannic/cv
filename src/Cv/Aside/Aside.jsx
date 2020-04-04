@@ -3,7 +3,7 @@ import {sectionMargin} from "../Section"
 import {Link} from "./Link"
 import {Skill} from "./Skill"
 import {cssMixins} from "../../utils/style"
-import {makeStyles} from "@material-ui/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import {AsideSection} from "./AsideSection"
 import {useI18n} from "../../i18n/I18nContext"
 import Logo from "../../utils/Logo"
@@ -18,14 +18,14 @@ const useStyles = makeStyles(t => ({
   header: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: t.spacing.unit * 2,
+    marginBottom: t.spacing(2),
   },
   avatar: {
     background: 'rgba(0,0,0,.4)',
     // height: avatarSize,
     // width: avatarSize,
     borderRadius: '50%',
-    marginRight: t.spacing.unit * 1.5,
+    marginRight: t.spacing(1.5),
   },
   name: {
     fontSize: cssMixins.fontMainTitle,
@@ -40,11 +40,11 @@ const useStyles = makeStyles(t => ({
     height: 1,
     background: t.palette.divider,
     border: 'none',
-    marginTop: t.spacing.unit,
-    marginRight: t.spacing.unit,
+    marginTop: t.spacing(1),
+    marginRight: t.spacing(1),
   },
   p: {
-    marginBottom: t.spacing.unit / 2,
+    marginBottom: t.spacing(1) / 2,
   }
 }))
 
@@ -67,19 +67,22 @@ export const Aside = () => {
         </Link>
         <Link iconFa="stack-overflow">
           <a href="https://stackoverflow.com/users/5735030/alexandre-annic"
-             target="_blank">stackoverflow.com/users/5735030</a>
+             target="_blank" rel="noopener noreferrer">stackoverflow.com/users/5735030</a>
         </Link>
         <Link iconFa="github">
-          <a href="https://github.com/alexandreannic" target="_blank">github.com/alexandreannic</a>
+          <a href="https://github.com/alexandreannic" target="_blank"
+             rel="noopener noreferrer">github.com/alexandreannic</a>
         </Link>
         <Link iconFa="linkedin">
-          <a href="https://www.linkedin.com/in/alexandreannic/" target="_blank">linkedin.com/in/alexandreannic</a>
+          <a href="https://www.linkedin.com/in/alexandreannic/" target="_blank"
+             rel="noopener noreferrer">linkedin.com/in/alexandreannic</a>
         </Link>
       </AsideSection>
-      {i18n.skills.map(s =>
-        <AsideSection title={s.title}>
-          {s.content.map(c =>
+      {i18n.skills.map((s, i) =>
+        <AsideSection title={s.title} key={i}>
+          {s.content.map((c, i) =>
             <Skill
+              key={i}
               logo={c.logo}
               title={c.title}
               rate={c.rate}
@@ -90,8 +93,8 @@ export const Aside = () => {
         </AsideSection>
       )}
       <AsideSection title={i18n.various.label}>
-        {i18n.various.articles.map(v =>
-          <div className={css.p} dangerouslySetInnerHTML={{__html: v}}/>
+        {i18n.various.articles.map((v, i) =>
+          <div className={css.p} key={i} dangerouslySetInnerHTML={{__html: v}}/>
         )}
       </AsideSection>
     </main>

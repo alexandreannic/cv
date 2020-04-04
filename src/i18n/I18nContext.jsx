@@ -8,7 +8,7 @@ const defaultLang = navigator.language === 'fr-FR' ? 'fr' : 'en'
 const I18nContext = createContext({})
 
 export const I18nContextProvider = ({children}) => {
-  const [lang, changeLang] = usePersistentState(defaultLang)
+  const [lang, changeLang] = usePersistentState(defaultLang, 'lang')
   return (
     <I18nContext.Provider value={{
       m: getMessagesByLang(lang),

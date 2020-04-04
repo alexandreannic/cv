@@ -3,36 +3,28 @@ import ReactDOM from "react-dom"
 import "./asset/reset.css"
 import "./asset/print.css"
 import App from "./App"
-import {blue} from "@material-ui/core/colors"
-import MuiThemeProviderContext from '@material-ui/styles/ThemeProvider'
-import {createMuiTheme, MuiThemeProvider} from '@material-ui/core'
 import {I18nContextProvider} from "./i18n/I18nContext"
+import {createMuiTheme} from '@material-ui/core/styles'
+import {ThemeProvider} from '@material-ui/styles'
+import {ThemeContextProvider, useAppTheme} from './theme/useAppTheme'
+import {muiTheme} from './theme/theme'
 
-const muiTheme = createMuiTheme({
-  palette: {
-    theme: 'dark',
-    primary: {
-      ...blue,
-      500: '#1a73e8',
-    },
-    // text: {
-      // primary: '#202124',
-      // secondary: '#5f6368',
-    // },
-    background: {
-      default: '#F2F2F2'
-    }
-  }
-})
+const Root = () => {
+  const {isDarkTheme} = useAppTheme()
+  const theme = createMuiTheme(muiTheme(isDarkTheme))
+  return (
+    <ThemeProvider theme={theme}>
+      <App/>
+    </ThemeProvider>
+  )
+}
 
 ReactDOM.render(
-  <MuiThemeProviderContext theme={muiTheme}>
-    <MuiThemeProvider theme={muiTheme}>
-      <I18nContextProvider>
-        <App/>
-      </I18nContextProvider>
-    </MuiThemeProvider>
-  </MuiThemeProviderContext>
+  <ThemeContextProvider>
+    <I18nContextProvider>
+      <Root/>
+    </I18nContextProvider>
+  </ThemeContextProvider>
   ,
   document.getElementById('root')
 )

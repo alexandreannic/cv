@@ -11,11 +11,11 @@ const useStyles = makeStyles(t => ({
     display: 'flex',
     alignItems: 'center',
     '&:not(last-of-type)': {
-      paddingBottom: t.spacing.unit * 1
+      paddingBottom: t.spacing(1) * 1
     },
   },
   i: {
-    marginRight: t.spacing.unit * 1.5,
+    marginRight: t.spacing(1.5),
     fontSize: `${iconSize}px !important`,
     minWidth: iconSize,
     textAlign: 'center',

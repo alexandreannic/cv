@@ -3,16 +3,14 @@ import {makeStyles} from "@material-ui/styles"
 import {cssMixins} from "../utils/style"
 import classNames from 'classnames'
 
-const logoSize = 20
-
 const useStyles = makeStyles(t => ({
   Article: {
     display: 'flex',
     alignItems: 'flex-start',
     fontSize: cssMixins.fontMedium,
     '&:not(:last-of-type)': {
-      paddingBottom: t.spacing.unit * 1.5,
-      marginBottom: t.spacing.unit * 1.5,
+      paddingBottom: t.spacing(1.5),
+      marginBottom: t.spacing(1.5),
       borderBottom: `1px solid ${t.palette.divider}`,
     },
   },
@@ -32,19 +30,21 @@ const useStyles = makeStyles(t => ({
     alignItems: 'center',
     color: t.palette.primary.main,
     fontSize: cssMixins.fontSmall,
+    marginTop: t.spacing(.25),
+    marginBottom: t.spacing(.5),
   },
   logo: {
-    marginRight: t.spacing.unit,
+    marginRight: t.spacing(1),
   },
   title: {
-    fontWeight: 500,
+    // fontWeight: 500,
     flex: 1,
     fontSize: cssMixins.fontBig,
   },
   text: {
-    marginTop: t.spacing.unit / 2.5,
+    marginTop: t.spacing(1) / 2.5,
     textAlign: 'justify',
-    // color: t.palette.text.secondary,
+    color: t.palette.text.secondary,
     fontSize: cssMixins.fontSmall,
   },
   honor: {
@@ -58,7 +58,7 @@ const useStyles = makeStyles(t => ({
     // color: t.palette.primary.main,
     // borderRadius: 4,
     fontWeight: 'bold',
-    // marginRight: t.spacing.unit,
+    // marginRight: t.spacing(1),
   }
 }))
 

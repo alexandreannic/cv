@@ -73,7 +73,7 @@ export const cvEn = {
         logo: 'particeep.jpg',
         title: 'Software developer internship',
         location: 'Particeep - Paris',
-        period: '2016',
+        period: '2016 (6 months)',
         content: `
           Contributed to the evolution of a SaaS application in <code>Java</code> and <code>AngularJS</code>.<br/>
           Refactored a large part to improve performances, code readability and reusability.<br/>
@@ -84,9 +84,11 @@ export const cvEn = {
         logo: 'upmc.png',
         title: 'Software engineer',
         location: 'Event Catalyst',
-        period: '6 months - 2016',
+        period: '2016 (6 months)',
         content: `
-          Developed an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an Android application
+          Created a system to allow conferences organisation.
+          Including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an Android application
+          providing features as QR-code check-in, form editing and filling and visitors management.
         `
       },
       {
@@ -100,16 +102,16 @@ export const cvEn = {
         Developed websites in <code>PHP</code> for minor companies and associations.
       `
       },
-      {
-        logo: 'upmc.png',
-        title: 'Master 1 semester project',
-        location: 'UPMC (University Pierre et Marie Curie) - Paris',
-        period: '6 months - 2015',
-        content: `
-        Implemented autoscalling registry inspired by DHT based on an application of distributed
-        components, using technologies as Future, Socket, Thread and RMI.
-      `
-      },
+      // {
+      //   logo: 'upmc.png',
+      //   title: 'Master 1 semester project',
+      //   location: 'UPMC (University Pierre et Marie Curie) - Paris',
+      //   period: '6 months - 2015',
+      //   content: `
+      //   Implemented autoscalling registry inspired by DHT based on an application of distributed
+      //   components, using technologies as Future, Socket, Thread and RMI.
+      // `
+      // },
       {
         title: 'Internship in computer research',
         location: 'LRI (Computer Research Laboratory) - Orsay',
