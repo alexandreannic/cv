@@ -99,10 +99,10 @@ const App = () => {
           </Button>
         </Tooltip>
         <Tooltip title="Print (CTRL+P)">
-          <Button variant="outlined" onClick={() => {
+          <Button variant="outlined" color="primary" onClick={() => {
             if (isDarkTheme) setIsDarkTheme(false)
             setTimeout(window.print)
-          }} color="primary">
+          }}>
             <Icon>print</Icon>
           </Button>
         </Tooltip>
