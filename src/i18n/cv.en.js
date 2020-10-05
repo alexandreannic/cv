@@ -50,7 +50,7 @@ export const cvEn = {
       {
         title: 'Big Data engineer',
         location: 'Mediarithmics - Paris',
-        period: '2019 - 2020',
+        period: '2019 - 2020 (1 year)',
         content: `
           Developed a <code>Node.js</code> application to automate the import of a large volume of data
           (several tens of GB daily). Controlled by a <code>React</code> UI,
@@ -62,7 +62,7 @@ export const cvEn = {
         logo: 'particeep.jpg',
         title: 'Software engineer',
         location: 'Particeep - Paris',
-        period: '2016 - 2019',
+        period: '2016 - 2019 (3 years)',
         content: `
           Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
           Contributed to the evolution of REST and GraphQL API wrote in <code>Scala</code>.<br/>
@@ -106,7 +106,7 @@ export const cvEn = {
       //   logo: 'upmc.png',
       //   title: 'Master 1 semester project',
       //   location: 'UPMC (University Pierre et Marie Curie) - Paris',
-      //   period: '6 months - 2015',
+      //   period: '2015 (6 months)',
       //   content: `
       //   Implemented autoscalling registry inspired by DHT based on an application of distributed
       //   components, using technologies as Future, Socket, Thread and RMI.
@@ -115,7 +115,7 @@ export const cvEn = {
       {
         title: 'Internship in computer research',
         location: 'LRI (Computer Research Laboratory) - Orsay',
-        period: '3 months - 2013',
+        period: '2013 (3 months)',
         content: `
         Worked on the Grid Observatory project related to the flagship European Grid Infrastructure.
         Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make

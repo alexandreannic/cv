@@ -50,7 +50,7 @@ export const cvFr = {
       {
         title: 'Ingénieur Big Data',
         location: 'Mediarithmics - Paris',
-        period: '2019 - 2020',
+        period: '2019 - 2020 (1 ans)',
         content: `
           Développement d’une application <code>Node.js</code> d'automatisant l’imports d’un important volume de données
           (plusieurs dizaines de Go quotidien). Contrôlée par une UI permettant de lancer
@@ -61,7 +61,7 @@ export const cvFr = {
         logo: 'particeep.jpg',
         title: 'Ingénieur logiciel',
         location: 'Particeep - Paris',
-        period: '2016 - 2019',
+        period: '2016 - 2019 (3 ans)',
         content: `
         Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
         Contribution à l'évolution d'API REST et GraphQL codées en <code>Scala</code>.<br/>
@@ -115,7 +115,7 @@ export const cvFr = {
       {
         title: 'Stage de recherche informatique',
         location: 'LRI (au Laboratoire de Recherche Informatique) - Orsay',
-        period: '3 mois - 2013',
+        period: '2013 (3 mois)',
         content: `
         Conception d’un système de reconstruction de données provenant de plus de
         250 machines associées à la grille EGI (traitement de +200Go de données par mois).

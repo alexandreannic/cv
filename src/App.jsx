@@ -30,11 +30,13 @@ const useStyles = makeStyles(t => ({
     },
     code: {
       // background: 'rgba(0,0,0,.04)', // fade(t.palette.primary.main, 0.1),
-      color: t.palette.text.disabled,
       // padding: `0 ${t.spacing(1) / 2}px`,
       // fontSize: cssMixins.rem(1),
       // borderRadius: 2,
-      fontFamily: '"Source Code Pro", monospace',
+      // color: t.palette.text.disabled,
+      // fontFamily: '"Source Code Pro", monospace',
+      fontWeight: 600,
+      fontFamily: 'inherit',
     },
   },
   root: {
@@ -81,13 +83,13 @@ const App = () => {
           <RadioSetItem value="en">En</RadioSetItem>
         </RadioSet>
 
-        <Tooltip title="Dark theme">
-          <Button variant="outlined"
-                  color="primary"
-                  onClick={() => setIsDarkTheme(_ => !_)}>
-            <Icon>{isDarkTheme ? 'brightness_high' : 'brightness_low'}</Icon>
-          </Button>
-        </Tooltip>
+        {/*<Tooltip title="Dark theme">*/}
+        {/*  <Button variant="outlined"*/}
+        {/*          color="primary"*/}
+        {/*          onClick={() => setIsDarkTheme(_ => !_)}>*/}
+        {/*    <Icon>{isDarkTheme ? 'brightness_high' : 'brightness_low'}</Icon>*/}
+        {/*  </Button>*/}
+        {/*</Tooltip>*/}
 
         <Tooltip title="Sources code">
           <Button variant="outlined"
