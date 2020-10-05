@@ -110,7 +110,7 @@ const App = () => {
         </Tooltip>
         <Tooltip title="Download as PDF">
           <Button variant="outlined"
-                  href={`/Alexandre_Annic-CV-${lang}.pdf`}
+                  href={`/Alexandre_Annic-cv-${lang}.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary">
