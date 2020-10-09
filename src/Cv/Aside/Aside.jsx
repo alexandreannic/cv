@@ -12,7 +12,7 @@ const avatarSize = '1.50cm'
 
 const useStyles = makeStyles(t => ({
   root: {
-    width: '6.24cm',
+    width: '6.20cm',
     marginRight: sectionMargin(t) * 1.5
   },
   header: {

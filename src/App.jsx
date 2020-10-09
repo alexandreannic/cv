@@ -33,8 +33,11 @@ const useStyles = makeStyles(t => ({
       // padding: `0 ${t.spacing(1) / 2}px`,
       // fontSize: cssMixins.rem(1),
       // borderRadius: 2,
-      // color: t.palette.text.disabled,
+      // color: t.palette.primary.main,
+
+      // color: 'inherit',
       // fontFamily: '"Source Code Pro", monospace',
+      color: 'black',
       fontWeight: 600,
       fontFamily: 'inherit',
     },

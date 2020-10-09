@@ -35,7 +35,7 @@ export const Cv = () => {
               location={e.location}
               logo={e.logo}
             >
-              <span dangerouslySetInnerHTML={{__html: e.content}}/>
+              {/*<span dangerouslySetInnerHTML={{__html: e.content}}/>*/}
             </Article>
           )}
         </Section>
@@ -53,7 +53,6 @@ export const Cv = () => {
               <span dangerouslySetInnerHTML={{__html: e.content}}/>
             </Article>
           )}
-
         </Section>
       </div>
     </div>

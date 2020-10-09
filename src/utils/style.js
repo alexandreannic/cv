@@ -12,6 +12,6 @@ export const cssMixins = {
   fontTitle,
   fontMedium,
   fontMainTitle,
-  lineHeight: 1.4,
+  lineHeight: 1.48,
   radius: 6,
 }

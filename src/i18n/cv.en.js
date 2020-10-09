@@ -5,7 +5,7 @@ export const cvEn = {
     label: 'Education',
     articles: [
       {
-        title: 'Master STL (Science and Software Technology)',
+        title: 'Master Science and Software Technology',
         honor: 'With high honours',
         period: '2016',
         location: 'UPMC (University Pierre et Marie Curie) - Paris',
@@ -52,10 +52,10 @@ export const cvEn = {
         location: 'Mediarithmics - Paris',
         period: '2019 - 2020 (1 year)',
         content: `
-          Developed a <code>Node.js</code> application to automate the import of a large volume of data
-          (several tens of GB daily). Controlled by a <code>React</code> UI,
-          it allows launching <code>Dockers</code> containers, linked by message queues,
-          orchestrated by <code>Kubernetes</code>.
+          Developed <code>Node/TypeScript</code> applications streaming GB of daily data.
+          Allow to build and monitor "pipelines" of microservices in <code>Microsoft Azure</code>,
+          linked by queues, orchestrated with <code>k8s (Docker)</code> and controlled by a <code>React</code> UI.<br/>
+          Developed <code>TypeScript</code> libraries, test coverage close to 100% with <code>Mocha</code>.
         `
       },
       {
@@ -64,9 +64,11 @@ export const cvEn = {
         location: 'Particeep - Paris',
         period: '2016 - 2019 (3 years)',
         content: `
-          Led front team and created several applications from scratch in <code>React</code>/<code>Angular</code>.
-          Contributed to the evolution of REST and GraphQL API wrote in <code>Scala</code>.<br/>
-          Developed SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
+          Led front team and created several <code>React</code> and <code>Angular</code> applications from scratch.<br/>
+          Contributed to the evolution of the REST and <code>GraphQL</code> API in <code>Scala</code> with <code>PostgresSQL</code>.<br/>
+          Developed the API SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
+          Built functional and end to end tests with <code>Selenium</code>, <code>Mocha</code> and <code>Protractor</code>.<br/>
+          Implemented CI with <code>Jenkins</code>.<br/>
         `
       },
       {
@@ -76,8 +78,9 @@ export const cvEn = {
         period: '2016 (6 months)',
         content: `
           Contributed to the evolution of a SaaS application in <code>Java</code> and <code>AngularJS</code>.<br/>
-          Refactored a large part to improve performances, code readability and reusability.<br/>
+          Full refactoring to improve performances, code readability and reusability.<br/>
           Developed features as theme personalization, mails edition and online payment.
+          Built <code>JUnit</code> and <code>Selenium</code> tests.
         `
       },
       {
@@ -86,9 +89,10 @@ export const cvEn = {
         location: 'Event Catalyst',
         period: '2016 (6 months)',
         content: `
-          Created a system to allow conferences organisation.
-          Including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an Android application
-          providing features as QR-code check-in, form editing and filling and visitors management.
+          Created a system to allow the organization of conferences,
+          including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an
+          <code>Android</code> application providing features as QR-code check-in, form editing and filling,
+           visitor management.
         `
       },
       {
@@ -97,9 +101,9 @@ export const cvEn = {
         location: 'Activa Informatique - Paris',
         period: 'Summers 2013, 2014 and 2015',
         content: `
-        Developed features on a SaaS application developed with <code>Java</code>, <code>JPA</code> and <code>JQuery</code>
-        such as appointments calendar, real-time chat, statistics. <br/>
-        Developed websites in <code>PHP</code> for minor companies and associations.
+        Developed features on a SaaS application with <code>Java</code>, <code>JPA</code>, <code>JQuery</code>
+        and <code>MySQL</code> such as appointments calendar, real-time chat, statistics.<br/>
+        Developed websites in <code>PHP</code> for small businesses and associations.
       `
       },
       // {
@@ -117,9 +121,9 @@ export const cvEn = {
         location: 'LRI (Computer Research Laboratory) - Orsay',
         period: '2013 (3 months)',
         content: `
-        Worked on the Grid Observatory project related to the flagship European Grid Infrastructure.
-        Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make
-        them workable by researchers.
+        Worked on the Grid Observatory project related to the European Grid Infrastructure.
+        Reconstructed a flow with <code>Perl</code> and <code>MySQL</code> of +200Go/month from 250 sources of inconsistent grid usage traces to make
+        them workable for researchers.
       `
       },
     ]
@@ -133,8 +137,7 @@ export const cvEn = {
           title: "React",
           rate: 5,
           content: `
-            Used in large applications sometimes coupled
-            with <code>Redux</code> and <code>TypeScript</code>.
+            Used in large applications including with <code>Redux</code> and <code>TypeScript</code>.
           `
         },
         {
@@ -142,7 +145,7 @@ export const cvEn = {
           title: "Angular (2+)",
           rate: 5,
           content: `
-            Used in large applications sometimes coupled with <code>ngrx</code>.
+            Used in large applications including with <code>NgRx</code>
           `,
         },
         {
@@ -158,7 +161,7 @@ export const cvEn = {
           title: "Play framework",
           rate: 4,
           content: `
-            Used both versions to create SaaS applications, REST and GraphQL API.
+            Used both versions to create SaaS applications, REST and <code>GraphQL</code> API
           `
         }
       ]
@@ -232,7 +235,7 @@ export const cvEn = {
     label: 'Various',
     articles: [
       'Diploma for youth leaders and workers (BAFA)',
-      `<div style="white-space: nowrap">Daily sport: crossfit, climbing, running</div>`,
+      `<div style="white-space: nowrap">Daily sport: Crossfit, climbing, running</div>`,
       'Driving licence',
     ]
   }

@@ -3,14 +3,14 @@ import {makeStyles} from "@material-ui/styles"
 import {cssMixins} from "../utils/style"
 import classNames from 'classnames'
 
-const useStyles = makeStyles(t => ({
+const useStyles = (dense) => makeStyles(t => ({
   Article: {
     display: 'flex',
     alignItems: 'flex-start',
     fontSize: cssMixins.fontMedium,
     '&:not(:last-of-type)': {
-      paddingBottom: t.spacing(1.5),
-      marginBottom: t.spacing(1.5),
+      paddingBottom: t.spacing(dense ? 1 : 1.5),
+      marginBottom: t.spacing(dense ? 1 : 1.5),
       borderBottom: `1px solid ${t.palette.divider}`,
     },
   },
@@ -29,9 +29,10 @@ const useStyles = makeStyles(t => ({
     display: 'flex',
     alignItems: 'center',
     color: t.palette.primary.main,
+    // color: t.palette.text.hint,
     fontSize: cssMixins.fontSmall,
     marginTop: t.spacing(.25),
-    marginBottom: t.spacing(.5),
+    // marginBottom: t.spacing(.5),
   },
   logo: {
     marginRight: t.spacing(1),
@@ -42,8 +43,8 @@ const useStyles = makeStyles(t => ({
     fontSize: cssMixins.fontBig,
   },
   text: {
-    marginTop: t.spacing(1) / 2.5,
-    textAlign: 'justify',
+    marginTop: t.spacing(.5),
+    // textAlign: 'justify',
     color: t.palette.text.secondary,
     fontSize: cssMixins.fontSmall,
   },
@@ -57,19 +58,20 @@ const useStyles = makeStyles(t => ({
     // border: '1px solid ' + t.palette.primary.main,
     // color: t.palette.primary.main,
     // borderRadius: 4,
-    fontWeight: 'bold',
+    color: 'black'
     // marginRight: t.spacing(1),
   }
 }))
 
-export const Article = ({title, period, location, logo, honor, children}) => {
-  const css = useStyles()
+export const Article = ({title, period, location, logo, honor, dense = false, children}) => {
+  const css = useStyles(dense)()
   return (
     <div className={css.Article}>
       <div className={css.body}>
         <div className={css.header}>
           <div className={classNames('Article_title', css.title)}>
             {title}
+            {honor && <span className={css.honor}> ({honor})</span>}
           </div>
           <div className={css.period}>{period}</div>
         </div>
@@ -78,7 +80,6 @@ export const Article = ({title, period, location, logo, honor, children}) => {
           {location}
         </div>
         {children && <div className={classNames('Article_text', css.text)}>
-          {honor && <span className={css.honor}>{honor} - </span>}
           {children}
         </div>}
       </div>

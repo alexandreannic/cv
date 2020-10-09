@@ -5,7 +5,7 @@ export const cvFr = {
     label: 'Éducation',
     articles: [
       {
-        title: 'Master STL (Science et Technologie du Logiciel)',
+        title: 'Master Science et Technologie du Logiciel',
         honor: 'Mention Bien',
         period: '2016',
         location: 'UPMC (Université Pierre et Marie Curie) - Paris',
@@ -50,11 +50,12 @@ export const cvFr = {
       {
         title: 'Ingénieur Big Data',
         location: 'Mediarithmics - Paris',
-        period: '2019 - 2020 (1 ans)',
+        period: '2019 - 2020 (1 an)',
         content: `
-          Développement d’une application <code>Node.js</code> d'automatisant l’imports d’un important volume de données
-          (plusieurs dizaines de Go quotidien). Contrôlée par une UI permettant de lancer
-          des containers <code>Dockers</code>, liés par des files, orchestré par <code>K8s</code>.
+          Développement d'applications <code>Node</code>/<code>TypeScript</code> streamant des Go de données quotidiennes.
+          Permet de générer et monitorer des "pipelines" de <code>microservices</code> dans <code>Microsoft Azure</code>, liés par des queues,
+          orchestrés avec <code>k8s (Docker)</code> et contrôlés par une UI <code>React</code>.<br/>
+          Développement de librairies <code>TypeScript</code>, converture de tests <code>Mocha</code> proche de 100%.
         `
       },
       {
@@ -63,9 +64,11 @@ export const cvFr = {
         location: 'Particeep - Paris',
         period: '2016 - 2019 (3 ans)',
         content: `
-        Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
-        Contribution à l'évolution d'API REST et GraphQL codées en <code>Scala</code>.<br/>
-        Développement de SDK <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
+          Direction de l'équipe front et création d'applications en <code>React</code>/<code>Angular</code>.<br/>
+          Contribution à l'évolution d'API REST et <code>GraphQL</code> en <code>Scala</code> avec <code>PostgresSQL</code>.<br/>
+          Développement de l'API SDK pour <code>JavaScript</code>, <code>PHP</code> et <code>Scala</code>.<br/>
+          Développement de tests fonctionnels et e2e avec <code>Selenium</code>, <code>Mocha</code> et <code>Protractor</code>.<br/>
+          Mise en place de CI avec <code>Jenkins</code>.<br/>
       `
       },
       {
@@ -74,9 +77,10 @@ export const cvFr = {
         location: 'Particeep - Paris',
         period: '2016  (6 mois)',
         content: `
-          Contribution au développement d'une application SaaS codée en <code>Java</code> et <code>AngularJS</code>.<br/>
+          Développement d'une application SaaS avec <code>Java</code>, <code>JPA</code>, <code>AngularJS</code> et <code>PostgresSQL</code>.<br/>
           Refactoring complet afin d'améliorer les performances et la réutilisabilité du code.<br/>
           Développement de fonctionnalités telles que: personnalisation de l'apparence, édition de mails et paiement en ligne.
+          Développement de tests <code>JUnit</code> et <code>Selenium</code>.
         `
       },
       {
@@ -86,9 +90,8 @@ export const cvFr = {
         period: '2016 (6 mois)',
         content: `
           Développement d'un système d'organisation de conférences, comprenant une API <code>ASP.NET</code>,
-          une Web application <code>ASP.NET</code> et une application Android.<br/>
-          Fonctionnalités: que check-in QR-code, formulaire éditable, gestion des visiteurs.
-
+          une Web application <code>ASP.NET</code> et une application <code>Android</code>.<br/>
+          Fonctionnalités: QR-code check-in, formulaire éditable, gestion des visiteurs.
        `
       },
       {
@@ -97,7 +100,7 @@ export const cvFr = {
         location: 'Activa Informatique - Paris',
         period: 'Étés 2013, 2014 and 2015',
         content: `
-          Développement de fonctionnalités sur une application SaaS codée en <code>Java</code>, <code>JPA</code> et <code>JQuery</code>
+          Développement de fonctionnalités sur une application SaaS avec <code>Java</code>, <code>JPA</code>, <code>JQuery</code> et <code>MySQL</code>
           telles que: calendrier de rendez-vous, discussion instantanée, statistiques.<br/>
           Création de sites web en <code>PHP</code> pour des PME et des associations.
         `
@@ -114,12 +117,12 @@ export const cvFr = {
       // },
       {
         title: 'Stage de recherche informatique',
-        location: 'LRI (au Laboratoire de Recherche Informatique) - Orsay',
+        location: 'LRI (Laboratoire de Recherche Informatique) - Orsay',
         period: '2013 (3 mois)',
         content: `
-        Conception d’un système de reconstruction de données provenant de plus de
-        250 machines associées à la grille EGI (traitement de +200Go de données par mois).
-      `
+          Conception d’un système de reconstruction de données (+200Go de données par mois) en <code>Perl</code> et <code>MySQL</code> provenant de plus de
+          250 machines associées à la grille EGI.
+        `
       },
     ]
   },
@@ -132,7 +135,7 @@ export const cvFr = {
           title: "React",
           rate: 5,
           content: `
-            Utilisé dans de grandes applications avec <code>Redux</code> et <code>TypeScript</code>
+            Utilisé dans des larges applications y compris avec <code>Redux</code> et <code>TypeScript</code>
           `
         },
         {
@@ -140,7 +143,7 @@ export const cvFr = {
           title: "Angular (2+)",
           rate: 5,
           content: `
-            Utilisé dans de grande applications avec <code>ngrx</code>.
+            Utilisé dans de larges applications y compris avec <code>NgRx</code>
           `,
         },
         {
@@ -156,7 +159,7 @@ export const cvFr = {
           title: "Play framework",
           rate: 4,
           content: `
-            Utilisation des 2 versions pour des applications SaaS et des API REST et GraphQL
+            Utilisation des 2 versions pour des applications SaaS et des API REST et <code>GraphQL</code>
           `
         }
       ]
@@ -230,7 +233,7 @@ export const cvFr = {
     label: 'Divers',
     articles: [
       'BAFA',
-      `<div style="white-space: nowrap">Sport quotidien: crossfit, escalade</div>`,
+      `<div style="white-space: nowrap">Sport quotidien: Crossfit, escalade</div>`,
       'Permis B',
     ]
   }
