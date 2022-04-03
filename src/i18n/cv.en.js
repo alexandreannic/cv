@@ -53,8 +53,8 @@ export const cvEn = {
         period: '2019 - 2020 (1 year)',
         content: `
           Developed <code>Node/TypeScript</code> applications streaming GB of daily data.
-          Allow to build and monitor "pipelines" of microservices in <code>Microsoft Azure</code>,
-          linked by queues, orchestrated with <code>k8s (Docker)</code> and controlled by a <code>React</code> UI.<br/>
+          Allow, through an <code>React</code> UI, to build and monitor "pipelines" of microservices in <code>Microsoft Azure</code>,
+          linked by queues, orchestrated with <code>k8s (Docker)</code>.<br/>
           Developed <code>TypeScript</code> libraries, test coverage close to 100% with <code>Mocha</code>.
         `
       },

@@ -53,8 +53,8 @@ export const cvFr = {
         period: '2019 - 2020 (1 an)',
         content: `
           Développement d'applications <code>Node</code>/<code>TypeScript</code> streamant des Go de données quotidiennes.
-          Permet de générer et monitorer des "pipelines" de <code>microservices</code> dans <code>Microsoft Azure</code>, liés par des queues,
-          orchestrés avec <code>k8s (Docker)</code> et contrôlés par une UI <code>React</code>.<br/>
+          Permet, via une UI <code>React</code>, de générer et monitorer des "pipelines" de <code>microservices</code> dans <code>Microsoft Azure</code>, liés par des queues,
+          orchestrés avec <code>k8s (Docker)</code>.<br/>
           Développement de librairies <code>TypeScript</code>, converture de tests <code>Mocha</code> proche de 100%.
         `
       },

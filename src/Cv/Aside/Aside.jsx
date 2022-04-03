@@ -8,7 +8,7 @@ import {AsideSection} from "./AsideSection"
 import {useI18n} from "../../i18n/I18nContext"
 import Logo from "../../utils/Logo"
 
-const avatarSize = '1.50cm'
+const avatarSize = '1.56cm'
 
 const useStyles = makeStyles(t => ({
   root: {
