@@ -1,19 +1,18 @@
 import React from "react"
-import {sectionMargin} from "../Section"
 import {Link} from "./Link"
-import {Skill} from "./Skill"
 import {cssMixins} from "../../utils/style"
 import {makeStyles} from "@material-ui/core/styles"
-import {AsideSection} from "./AsideSection"
 import {useI18n} from "../../i18n/I18nContext"
 import Logo from "../../utils/Logo"
+import {Icon, useTheme} from '@material-ui/core'
 
-const avatarSize = '1.56cm'
+const avatarSize = '1.6cm'
 
 const useStyles = makeStyles(t => ({
   root: {
-    width: '6.20cm',
-    marginRight: sectionMargin(t) * 1.5
+    marginBottom: t.spacing(4),
+    // display: 'flex',
+    // alignItems: 'center',
   },
   header: {
     display: 'flex',
@@ -32,9 +31,11 @@ const useStyles = makeStyles(t => ({
     textAlign: 'center',
   },
   job: {
-    color: t.palette.primary.main,
-    fontSize: cssMixins.rem(1.5),
-    fontWeight: 500,
+    fontSize: cssMixins.fontMainTitle,
+    color: t.palette.text.secondary,
+    fontWeight: 'lighter',
+    // fontSize: cssMixins.rem(1.5),
+    // fontWeight: 500,
   },
   divider: {
     height: 1,
@@ -48,55 +49,52 @@ const useStyles = makeStyles(t => ({
   }
 }))
 
+const Dot = () => {
+  const t = useTheme()
+  return (
+    <Icon style={{margin: '0 8px', color: t.palette.text.disabled, fontSize: 12}}>noise_control_off</Icon>
+  )
+}
+
 export const Aside = () => {
   const css = useStyles()
   const i18n = useI18n()
+  const t = useTheme()
   return (
-    <main className={css.root}>
+    <header className={css.root}>
       <div className={css.header}>
         <Logo className={css.avatar} size={avatarSize} src="avatar.jpg"/>
         <div>
-          <div className={css.name}>Alexandre Annic</div>
-          <div className={css.job}>{i18n.job}</div>
+          <div style={{display: 'flex', alignItems: 'center', marginBottom: t.spacing(.5)}}>
+            <div className={css.name}>Alexandre Annic</div>
+            <div className={css.job}>, {i18n.job}</div>
+          </div>
+          <div style={{
+            whiteSpace: 'nowrap',
+            display: 'flex',
+            alignItems: 'center',
+          }}>
+            <Link icon="location_on">{i18n.location}</Link>
+            <Dot/>
+            <Link icon="email">
+              <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
+            </Link>
+            <Dot/>
+            {/*<Link iconFa="stack-overflow">*/}
+            {/*  <a href="https://stackoverflow.com/users/5735030/alexandre-annic"*/}
+            {/*     target="_blank" rel="noopener noreferrer">stackoverflow.com/users/5735030</a>*/}
+            {/*</Link>*/}
+            {/*<Link iconFa="github">*/}
+            {/*  <a href="https://github.com/alexandreannic" target="_blank"*/}
+            {/*     rel="noopener noreferrer">github.com/alexandreannic</a>*/}
+            {/*</Link>*/}
+            <Link iconFa="linkedin">
+              <a href="https://www.linkedin.com/in/alexandreannic/" target="_blank"
+                 rel="noopener noreferrer">alexandreannic</a>
+            </Link>
+          </div>
         </div>
       </div>
-      <AsideSection>
-        <Link icon="location_on">{i18n.location}</Link>
-        <Link icon="email">
-          <a href="mailto:alexandre.annic1@gmail.com">alexandre.annic1@gmail.com</a>
-        </Link>
-        <Link iconFa="stack-overflow">
-          <a href="https://stackoverflow.com/users/5735030/alexandre-annic"
-             target="_blank" rel="noopener noreferrer">stackoverflow.com/users/5735030</a>
-        </Link>
-        <Link iconFa="github">
-          <a href="https://github.com/alexandreannic" target="_blank"
-             rel="noopener noreferrer">github.com/alexandreannic</a>
-        </Link>
-        <Link iconFa="linkedin">
-          <a href="https://www.linkedin.com/in/alexandreannic/" target="_blank"
-             rel="noopener noreferrer">linkedin.com/in/alexandreannic</a>
-        </Link>
-      </AsideSection>
-      {i18n.skills.map((s, i) =>
-        <AsideSection title={s.title} key={i}>
-          {s.content.map((c, i) =>
-            <Skill
-              key={i}
-              logo={c.logo}
-              title={c.title}
-              rate={c.rate}
-              content={c.content}>
-              <div dangerouslySetInnerHTML={{__html: c.content}}/>
-            </Skill>
-          )}
-        </AsideSection>
-      )}
-      <AsideSection title={i18n.various.label}>
-        {i18n.various.articles.map((v, i) =>
-          <div className={css.p} key={i} dangerouslySetInnerHTML={{__html: v}}/>
-        )}
-      </AsideSection>
-    </main>
+    </header>
   )
 }

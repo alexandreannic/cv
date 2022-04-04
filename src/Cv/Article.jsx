@@ -3,15 +3,15 @@ import {makeStyles} from "@material-ui/styles"
 import {cssMixins} from "../utils/style"
 import classNames from 'classnames'
 
-const useStyles = (dense) => makeStyles(t => ({
+const useStyles = makeStyles(t => ({
   Article: {
     display: 'flex',
     alignItems: 'flex-start',
     fontSize: cssMixins.fontMedium,
     '&:not(:last-of-type)': {
-      paddingBottom: t.spacing(dense ? 1 : 1.5),
-      marginBottom: t.spacing(dense ? 1 : 1.5),
-      borderBottom: `1px solid ${t.palette.divider}`,
+      paddingBottom: t.spacing(1),
+      marginBottom: t.spacing(1),
+      // borderBottom: `1px solid ${t.palette.divider}`,
     },
   },
   body: {
@@ -31,7 +31,7 @@ const useStyles = (dense) => makeStyles(t => ({
     color: t.palette.primary.main,
     // color: t.palette.text.hint,
     fontSize: cssMixins.fontSmall,
-    marginTop: t.spacing(.25),
+    marginTop: t.spacing(.125),
     // marginBottom: t.spacing(.5),
   },
   logo: {
@@ -63,8 +63,8 @@ const useStyles = (dense) => makeStyles(t => ({
   }
 }))
 
-export const Article = ({title, period, location, logo, honor, dense = false, children}) => {
-  const css = useStyles(dense)()
+export const Article = ({title, period, location, logo, honor, children}) => {
+  const css = useStyles()
   return (
     <div className={css.Article}>
       <div className={css.body}>

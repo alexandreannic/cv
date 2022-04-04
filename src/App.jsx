@@ -19,11 +19,10 @@ const useStyles = makeStyles(t => ({
       fontSize: t.typography.fontSize,
     },
     body: {
-      fontFamily: 'Google Sans, Helvetica,cArial, sans-serif',
+      fontFamily: 'Open Sans, Helvetica,cArial, sans-serif',
       margin: 0,
       padding: 0,
       color: t.palette.text.primary,
-      fontSize: 14,
       backgroundColor: t.palette.background.default, //'#fafafa,
     },
     a: {
@@ -71,7 +70,7 @@ const useStyles = makeStyles(t => ({
     height: '30cm',//'29.7cm',
     background: t.palette.background.paper,
     marginTop: t.spacing(1),
-    marginBottom: t.spacing(2),
+    // marginBottom: t.spacing(2),
     marginRight: 'auto',
     marginLeft: 'auto',
     boxShadow: '0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2)',

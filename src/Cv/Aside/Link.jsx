@@ -10,12 +10,12 @@ const useStyles = makeStyles(t => ({
     fontSize: cssMixins.fontMedium,
     display: 'flex',
     alignItems: 'center',
-    '&:not(last-of-type)': {
-      paddingBottom: t.spacing(1) * 1
-    },
+    // '&:not(last-of-type)': {
+    //   paddingBottom: t.spacing(1) * 1
+    // },
   },
   i: {
-    marginRight: t.spacing(1.5),
+    marginRight: t.spacing(1),
     fontSize: `${iconSize}px !important`,
     minWidth: iconSize,
     textAlign: 'center',

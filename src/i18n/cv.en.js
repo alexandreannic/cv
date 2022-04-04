@@ -1,5 +1,5 @@
 export const cvEn = {
-  job: 'Full-stack engineer',
+  job: 'Computer engineer',
   location: 'Paris Area, France',
   education: {
     label: 'Education',
@@ -74,10 +74,9 @@ Maintained project monitoring tools updated.
         location: 'Mediarithmics - Paris',
         period: '2019 - 2020 (1 year)',
         content: `
-          Developed <code>Node/TypeScript</code> applications streaming GB of daily data.
-          Allow, through an <code>React</code> UI, to build and monitor "pipelines" of microservices in <code>Microsoft Azure</code>,
-          linked by queues, orchestrated with <code>k8s (Docker)</code>.<br/>
-          Developed <code>TypeScript</code> libraries, test coverage close to 100% with <code>Mocha</code>.
+          Developed a system for large commercial companies allowing via an interface to
+          create, deploy and monitor applications' pipelines distributed on several servers
+          in order to import, transform and analyse GB of daily data.
         `
       },
       {
@@ -86,11 +85,9 @@ Maintained project monitoring tools updated.
         location: 'Particeep - Paris',
         period: '2016 - 2019 (3 years)',
         content: `
-          Led front team and created several <code>React</code> and <code>Angular</code> applications from scratch.<br/>
-          Contributed to the evolution of the REST and <code>GraphQL</code> API in <code>Scala</code> with <code>PostgresSQL</code>.<br/>
-          Developed the API SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
-          Built functional and end to end tests with <code>Selenium</code>, <code>Mocha</code> and <code>Protractor</code>.<br/>
-          Implemented CI with <code>Jenkins</code>.<br/>
+          Led a team of computer engineers and created several strongly secured Web applications for financial companies
+          to manage fundraisings, bank transactions, graphics, customisable forms to define customers needs,
+          etc.
         `
       },
       {
@@ -99,10 +96,8 @@ Maintained project monitoring tools updated.
         location: 'Activa Informatique - Paris',
         period: 'Summers 2013, 2014 and 2015',
         content: `
-        Developed features on a SaaS application with <code>Java</code>, <code>JPA</code>, <code>JQuery</code>
-        and <code>MySQL</code> such as appointments calendar, real-time chat, statistics.<br/>
-        Developed websites in <code>PHP</code> for small businesses and associations.
-      `
+          Developed websites for small companies and associations.
+        `
       },
       // {
       //   logo: 'upmc.png',
@@ -114,121 +109,52 @@ Maintained project monitoring tools updated.
       //   components, using technologies as Future, Socket, Thread and RMI.
       // `
       // },
+      // {
+      //   title: 'Internship in computer research',
+      //   location: 'LRI (Computer Research Laboratory) - Orsay',
+      //   period: '2013 (3 months)',
+      //   content: `
+      //     Worked on the Grid Observatory project related to the Large Hadron Collider LHC.
+      //     Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make
+      //     them workable for researchers.
+      //   `
+      // },
+    ]
+  },
+  skills: {
+    label: `Skills`,
+    items: [
+      `Database design`,
+      `Database administration`,
+      `Excel macro`,
+      `Microsoft Office Suite`,
+      `VBA`,
+      `Building graphic products`,
+      `Building data visualizations`,
+      `Developing applications`,
+      `Data analysis`,
+      `Data computation`,
+      `Data protection`,
+      `Team recruitment`,
+      `Team management`,
+    ]
+  },
+  volonteer: {
+    label: 'Various',
+    articles: [
       {
-        title: 'Internship in computer research',
-        location: 'LRI (Computer Research Laboratory) - Orsay',
-        period: '2013 (3 months)',
-        content: `
-        Worked on the Grid Observatory project related to the European Grid Infrastructure.
-        Reconstructed a flow with <code>Perl</code> and <code>MySQL</code> of +200Go/month from 250 sources of inconsistent grid usage traces to make
-        them workable for researchers.
-      `
+        title: `Volunteer with the French Red Cross`,
+        location: 'Brittany, France',
+        period: 'since 2022'
+      },
+      {
+        title: 'Volunteer firefighter',
+        location: 'Brittany, France',
+        period: 'since 2021',
+        description: `In formation`
       },
     ]
   },
-  skills: [
-    {
-      title: 'Framework',
-      content: [
-        {
-          logo: "dev/react.png",
-          title: "React",
-          rate: 5,
-          content: `
-            Used in large applications including with <code>Redux</code> and <code>TypeScript</code>.
-          `
-        },
-        {
-          logo: "dev/angular.png",
-          title: "Angular (2+)",
-          rate: 5,
-          content: `
-            Used in large applications including with <code>NgRx</code>
-          `,
-        },
-        {
-          logo: "dev/angularjs.png",
-          title: "AngularJS",
-          rate: 4,
-          content: `
-
-          `
-        },
-        {
-          logo: "dev/play.png",
-          title: "Play framework",
-          rate: 4,
-          content: `
-            Used both versions to create SaaS applications, REST and <code>GraphQL</code> API
-          `
-        }
-      ]
-    },
-    {
-      title: 'Languages',
-      content: [
-        {
-          logo: "dev/ts.png",
-          title: "TypeScript",
-          rate: 5,
-        },
-        {
-          logo: "dev/javascript.png",
-          title: "JavaScript",
-          rate: 5,
-        },
-        {
-          logo: "dev/scala.png",
-          title: "Scala",
-          rate: 3,
-        },
-        {
-          logo: "dev/java.png",
-          title: "Java",
-          rate: 4,
-        },
-        {
-          logo: "dev/csharp.png",
-          title: "C#",
-          rate: 2.5,
-        },
-        {
-          logo: "dev/php.png",
-          title: "PHP",
-          rate: 4,
-        },
-        {
-          logo: "dev/c++.png",
-          title: "C/C++",
-          rate: 3,
-        },
-        {
-          logo: "dev/perl.png",
-          title: "Perl",
-          rate: 3.5,
-        }
-      ]
-    },
-    {
-      title: 'Persistence',
-      content: [
-        {
-          logo: 'dev/sql.png',
-          title: 'SQL',
-          rate: 4.5,
-          // content: `
-          //   Mainly <code>PostGres</code> anad <code>MySQL</code>. Script <code>PL/SQL</code>
-          // `
-        },
-        {
-          logo: 'dev/nosql.png',
-          title: 'NoSQL',
-          rate: 3,
-          // content: `Used document-oriented databases mainly during studies projects`
-        },
-      ]
-    }
-  ],
   various: {
     label: 'Various',
     articles: [
