@@ -48,9 +48,21 @@ export const cvEn = {
     label: 'Work experiences',
     articles: [
       {
+        title: 'MEAL Officer',
+        location: 'Première Urgence Internationale - Poland (Ukraine Emergency)',
+        period: 'April 2022 - May 2022',
+        content: `
+          Digitalized forms using Kobo.
+Training and technical support of the program teams. 
+Created and managed databases and visualisation tools allowing program monitoring and reporting. 
+Set up FCRM mechanisms.
+Maintained project monitoring tools updated.
+        `
+      },
+      {
         title: 'Software Engineer',
         location: 'beta.gouv, French Ministry of Economics - Paris',
-        period: '2020 - 2022 (2 year)',
+        period: '2020 - 2022 (2 years)',
         content: `
           Developed SignalConso application related to Consumer Affairs and Fraud Prevention.
           Built on a <code>Scala</code> Rest API, <code>Node</code> and <code>React</code> applications.
@@ -79,30 +91,6 @@ export const cvEn = {
           Developed the API SDK for <code>JavaScript</code>, <code>PHP</code> and <code>Scala</code>.<br/>
           Built functional and end to end tests with <code>Selenium</code>, <code>Mocha</code> and <code>Protractor</code>.<br/>
           Implemented CI with <code>Jenkins</code>.<br/>
-        `
-      },
-      {
-        logo: 'particeep.jpg',
-        title: 'Software developer internship',
-        location: 'Particeep - Paris',
-        period: '2016 (6 months)',
-        content: `
-          Contributed to the evolution of a SaaS application in <code>Java</code> and <code>AngularJS</code>.<br/>
-          Full refactoring to improve performances, code readability and reusability.<br/>
-          Developed features as theme personalization, mails edition and online payment.
-          Built <code>JUnit</code> and <code>Selenium</code> tests.
-        `
-      },
-      {
-        logo: 'upmc.png',
-        title: 'Software engineer',
-        location: 'Event Catalyst',
-        period: '2016 (6 months)',
-        content: `
-          Created a system to allow the organization of conferences,
-          including the development of an <code>ASP.NET</code> API, an <code>ASP.NET</code> Web application and an
-          <code>Android</code> application providing features as QR-code check-in, form editing and filling,
-           visitor management.
         `
       },
       {
