@@ -48,6 +48,16 @@ export const cvEn = {
     label: 'Work experiences',
     articles: [
       {
+        title: 'Software Engineer',
+        location: 'beta.gouv, French Ministry of Economics - Paris',
+        period: '2020 - 2022 (2 year)',
+        content: `
+          Developed SignalConso application related to Consumer Affairs and Fraud Prevention.
+          Built on a <code>Scala</code> Rest API, <code>Node</code> and <code>React</code> applications.
+          Accessible through https://signal.conso.gouv.fr and https://admin.signal.conso.gouv.fr.
+        `
+      },
+      {
         title: 'Big Data engineer',
         location: 'Mediarithmics - Paris',
         period: '2019 - 2020 (1 year)',
