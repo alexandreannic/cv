@@ -70,6 +70,7 @@ const useStyles = makeStyles(t => ({
     height: '30cm',//'29.7cm',
     background: t.palette.background.paper,
     marginTop: t.spacing(1),
+    paddingBottom: t.spacing(2),
     // marginBottom: t.spacing(2),
     marginRight: 'auto',
     marginLeft: 'auto',

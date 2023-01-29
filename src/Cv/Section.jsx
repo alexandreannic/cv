@@ -2,17 +2,17 @@ import React from "react"
 import {cssMixins} from "../utils/style"
 import {makeStyles} from "@material-ui/styles"
 
-export const sectionMargin = t => t.spacing(1) * 2.5
+export const sectionMargin = t => t.spacing(1) * 2
 
 const useStyles = makeStyles(t => ({
   Section: {
     '&:not(:last-of-type)': {
-      borderBottom: '1px solid ' + t.palette.divider,
+      borderBottom: props => props.noSeparator ? 'none' : '1px solid ' + t.palette.divider
     },
     // padding: t.spacing(2),
     // borderRadius: cssMixins.radius,
     marginBottom: sectionMargin(t),
-    paddingBottom: sectionMargin(t),
+    paddingBottom: props => props.noSeparator ? 0 : sectionMargin(t),
   },
   title: {
     fontSize: cssMixins.fontTitle,
