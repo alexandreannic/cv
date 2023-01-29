@@ -1,5 +1,5 @@
 export const cvEn = {
-  job: 'Computer engineer',
+  job: 'Software engineer',
   location: 'Paris Area, France',
   education: {
     label: 'Education',
@@ -90,15 +90,6 @@ Maintained project monitoring tools updated.
           etc.
         `
       },
-      {
-        logo: 'activa.png',
-        title: 'Software developer',
-        location: 'Activa Informatique - Paris',
-        period: 'Summers 2013, 2014 and 2015',
-        content: `
-          Developed websites for small companies and associations.
-        `
-      },
       // {
       //   logo: 'upmc.png',
       //   title: 'Master 1 semester project',
@@ -109,29 +100,29 @@ Maintained project monitoring tools updated.
       //   components, using technologies as Future, Socket, Thread and RMI.
       // `
       // },
-      // {
-      //   title: 'Internship in computer research',
-      //   location: 'LRI (Computer Research Laboratory) - Orsay',
-      //   period: '2013 (3 months)',
-      //   content: `
-      //     Worked on the Grid Observatory project related to the Large Hadron Collider LHC.
-      //     Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make
-      //     them workable for researchers.
-      //   `
-      // },
+      {
+        title: 'Internship in computer research',
+        location: 'LRI (Computer Research Laboratory) - Orsay',
+        period: '2013 (3 months)',
+        content: `
+          Worked on the Grid Observatory project related to the Large Hadron Collider LHC.
+          Reconstructed a flow of +200Go/month from 250 sources of inconsistent grid usage traces to make
+          them workable for researchers.
+        `
+      },
     ]
   },
   skills: {
     label: `Skills`,
     items: [
       `Database design`,
-      `Database administration`,
+      // `Database administration`,
       `Excel macro`,
-      `Microsoft Office Suite`,
+      `Microsoft Office`,
       `VBA`,
       `Building graphic products`,
       `Building data visualizations`,
-      `Developing applications`,
+      // `Developing applications`,
       `Data analysis`,
       `Data computation`,
       `Data protection`,

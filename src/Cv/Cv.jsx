@@ -26,7 +26,7 @@ export const Cv = () => {
     <div className={css.content}>
       <div className={css.body}>
         <Aside/>
-        <Section title={i18n.skills.label}>
+        <Section noSeparator>
           {i18n.skills.items.map(skill =>
             <Tag key={skill}>{skill}</Tag>
           )}

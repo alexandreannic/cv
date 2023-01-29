@@ -10,7 +10,7 @@ const avatarSize = '1.6cm'
 
 const useStyles = makeStyles(t => ({
   root: {
-    marginBottom: t.spacing(4),
+    marginBottom: t.spacing(3),
     // display: 'flex',
     // alignItems: 'center',
   },

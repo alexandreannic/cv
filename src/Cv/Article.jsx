@@ -9,7 +9,7 @@ const useStyles = makeStyles(t => ({
     alignItems: 'flex-start',
     fontSize: cssMixins.fontMedium,
     '&:not(:last-of-type)': {
-      paddingBottom: t.spacing(1),
+      paddingBottom: t.spacing(1/2),
       marginBottom: t.spacing(1),
       // borderBottom: `1px solid ${t.palette.divider}`,
     },
@@ -43,7 +43,7 @@ const useStyles = makeStyles(t => ({
     fontSize: cssMixins.fontBig,
   },
   text: {
-    marginTop: t.spacing(.5),
+    marginTop: t.spacing(.25),
     // textAlign: 'justify',
     color: t.palette.text.secondary,
     fontSize: cssMixins.fontSmall,
