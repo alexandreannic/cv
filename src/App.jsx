@@ -15,6 +15,9 @@ const useStyles = makeStyles(t => ({
         display: 'none',
       },
     },
+    html: {
+      fontSize: t.typography.fontSize,
+    },
     body: {
       fontFamily: 'Google Sans, Helvetica,cArial, sans-serif',
       margin: 0,
@@ -43,6 +46,7 @@ const useStyles = makeStyles(t => ({
     },
   },
   root: {
+    paddingBottom: t.spacing(2),
     paddingTop: t.spacing(1),
     margin: '16px auto',
     width: '21cm',
@@ -63,6 +67,7 @@ const useStyles = makeStyles(t => ({
     marginRight: t.spacing(1),
   },
   body: {
+    overflow: 'hidden',
     height: '30cm',//'29.7cm',
     background: t.palette.background.paper,
     marginTop: t.spacing(1),

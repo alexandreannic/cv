@@ -24,8 +24,8 @@ const useStyles = makeStyles(t => ({
   }
 }))
 
-const Section = ({title, icon, children}) => {
-  const css = useStyles()
+const Section = ({title, icon, noSeparator, children}) => {
+  const css = useStyles({noSeparator})
   return (
     <div className={css.Section}>
       {title &&

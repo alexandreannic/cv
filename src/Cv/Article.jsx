@@ -71,7 +71,7 @@ export const Article = ({title, period, location, logo, honor, dense = false, ch
         <div className={css.header}>
           <div className={classNames('Article_title', css.title)}>
             {title}
-            {honor && <span className={css.honor}> ({honor})</span>}
+            {honor && <span className={css.honor}> ({honor.toLowerCase()})</span>}
           </div>
           <div className={css.period}>{period}</div>
         </div>
