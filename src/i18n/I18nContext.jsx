@@ -1,6 +1,7 @@
 import React, {createContext, useContext} from 'react'
-import {cvFr} from "./cv.fr"
-import {cvEn} from "./cv.en"
+// import {cvFr as cv} from "./cv.fr"
+// import {cvEn as cv} from "./cv.en"
+import {cvHuEn as cv} from "./cv.humanitarian.en"
 import {usePersistentState} from 'react-persistent-state'
 
 // const defaultLang = navigator.language === 'fr-FR' ? 'fr' : 'en'
@@ -40,6 +41,6 @@ const getMessagesByLang = lang => {
     // case 'fr':
     //   return cvFr
     default:
-      return cvEn
+      return cv
   }
 }
